@@ -1,1022 +1,1801 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fuzion Academy – Speak English Confidently</title>
-<meta name="description" content="Fuzion Academy – Master Spoken English, Communication Skills, Personality Development, and Interview Preparation through practical learning.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<style>
-:root {
-  --blue: #4F8EF7;
-  --sky: #A8D8FF;
-  --purple: #C8B6FF;
-  --mint: #D9F8E5;
-  --coral: #FF7F7F;
-  --yellow: #FFEAA7;
-  --white: #FFFFFF;
-  --grey: #F8FAFC;
-  --cream: #FFFDF8;
-  --dark: #0D1B2A;
-  --text: #2D3748;
-  --muted: #718096;
-  --border: #E2E8F0;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speak English Confidently | Fuzion Academy – Spoken English & Communication Skills Institute</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Master Spoken English, Public Speaking, Personality Development, and Interview Preparation at Fuzion Academy. Learn online or offline in Pratap Vihar, Ghaziabad. Book a free demo class today!">
+  <meta name="keywords" content="Spoken English, Communication Skills, Fuzion Academy, Personality Development, Interview Preparation, Public Speaking, English Coaching, Ghaziabad, Pratap Vihar, Online English Class">
+  <meta name="author" content="Fuzion Academy">
+  <meta property="og:title" content="Speak English Confidently | Fuzion Academy">
+  <meta property="og:description" content="Join Fuzion Academy to master Spoken English, Communication Skills, Personality Development, and Interview Prep. Professional trainers, flexible timings, 100% practical classes.">
+  <meta property="og:image" content="Untitled design/4.png">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="Final Files/SVG/Icon.svg">
+  
+  <!-- PWA & Mobile Optimization -->
+  <meta name="theme-color" content="#4F8EF7">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="Untitled design/4.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'soft-blue': '#4F8EF7',
+            'sky-blue': '#A8D8FF',
+            'soft-purple': '#C8B6FF',
+            'mint-green': '#D9F8E5',
+            'coral-accent': '#FF7F7F',
+            'yellow-accent': '#FFEAA7',
+            'brand-green': '#74bf44',
+            'brand-navy': '#1f2659',
+            'brand-navy-dark': '#0d133a',
+            'light-grey': '#F8FAFC',
+            'soft-cream': '#FFFDF8',
+            // Dark Theme Palette
+            'dark-bg': '#080B1E',
+            'dark-card': '#131936',
+            'dark-border': '#1E254A',
+            'dark-text': '#E2E8F0',
+            'dark-muted': '#94A3B8'
+          },
+          fontFamily: {
+            heading: ['Outfit', 'Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          },
+          animation: {
+            'spin-slow': 'spin 20s linear infinite',
+            'bounce-slow': 'bounce 3s infinite',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float-y': 'floatY 4s ease-in-out infinite',
+            'float-y-reverse': 'floatYReverse 4.5s ease-in-out infinite',
+            'pulse-glow': 'pulseGlow 2s ease-in-out infinite'
+          },
+          keyframes: {
+            floatY: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-12px)' }
+            },
+            floatYReverse: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(12px)' }
+            },
+            pulseGlow: {
+              '0%, 100%': { opacity: '0.2', transform: 'scale(1)' },
+              '50%': { opacity: '0.4', transform: 'scale(1.05)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <!-- Extra CSS Custom Styles & Scroll Animations -->
+  <style type="text/css">
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Outfit', sans-serif;
+    }
+    
+    /* Scroll Reveal Animation Styles */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-html { scroll-behavior: smooth; }
+    /* Glassmorphism Classes */
+    .glass {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .dark .glass {
+      background: rgba(19, 25, 54, 0.8);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
 
-body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  color: var(--text);
-  background: var(--white);
-  overflow-x: hidden;
-}
-
-h1, h2, h3, h4, h5 { font-family: 'Outfit', sans-serif; }
-
-/* ── NAV ── */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 5%; height: 72px;
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(79,142,247,0.1);
-  transition: box-shadow .3s;
-}
-nav.scrolled { box-shadow: 0 4px 30px rgba(79,142,247,0.12); }
-.nav-logo {
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.5rem; font-weight: 800;
-  background: linear-gradient(135deg, var(--blue), var(--purple));
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.nav-logo span { color: var(--coral); -webkit-text-fill-color: var(--coral); }
-.nav-links { display: flex; gap: 2rem; list-style: none; }
-.nav-links a { text-decoration: none; color: var(--text); font-weight: 500; font-size: .92rem; transition: color .2s; }
-.nav-links a:hover { color: var(--blue); }
-.nav-cta {
-  background: linear-gradient(135deg, var(--blue), #6B78F7);
-  color: white; border: none; padding: .6rem 1.4rem;
-  border-radius: 50px; font-weight: 600; font-size: .88rem;
-  cursor: pointer; transition: transform .2s, box-shadow .2s;
-  text-decoration: none;
-}
-.nav-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(79,142,247,0.4); }
-.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
-.hamburger span { width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: all .3s; }
-.mobile-menu {
-  display: none; position: fixed; top: 72px; left: 0; right: 0;
-  background: white; padding: 1.5rem 5%; flex-direction: column; gap: 1rem;
-  border-bottom: 1px solid var(--border); z-index: 99;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-}
-.mobile-menu a { text-decoration: none; color: var(--text); font-weight: 600; padding: .5rem 0; border-bottom: 1px solid var(--border); }
-.mobile-menu.open { display: flex; }
-
-/* ── HERO ── */
-.hero {
-  min-height: 100vh; display: flex; align-items: center;
-  padding: 100px 5% 60px;
-  background: linear-gradient(135deg, var(--cream) 0%, #EEF5FF 50%, #F0EEFF 100%);
-  position: relative; overflow: hidden;
-}
-.hero-blob {
-  position: absolute; border-radius: 50%; filter: blur(80px); opacity: .35; pointer-events: none;
-}
-.blob1 { width: 500px; height: 500px; background: var(--sky); top: -100px; right: -100px; }
-.blob2 { width: 400px; height: 400px; background: var(--purple); bottom: -80px; left: -80px; }
-.blob3 { width: 300px; height: 300px; background: var(--mint); bottom: 100px; right: 20%; }
-.hero-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; max-width: 1200px; margin: auto; position: relative; }
-.hero-badge {
-  display: inline-flex; align-items: center; gap: .5rem;
-  background: white; border: 1px solid rgba(79,142,247,0.25);
-  padding: .4rem 1rem; border-radius: 50px;
-  font-size: .8rem; font-weight: 600; color: var(--blue);
-  margin-bottom: 1.5rem; box-shadow: 0 2px 12px rgba(79,142,247,0.1);
-  animation: fadeUp .6s ease both;
-}
-.hero-badge .dot { width: 8px; height: 8px; background: #22C55E; border-radius: 50%; animation: pulse 2s infinite; }
-@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.3)} }
-.hero h1 {
-  font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 800; line-height: 1.15;
-  color: var(--dark); margin-bottom: 1.2rem;
-  animation: fadeUp .7s ease .1s both;
-}
-.hero h1 .accent { background: linear-gradient(135deg, var(--blue), var(--purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-.hero p {
-  font-size: 1.1rem; color: var(--muted); line-height: 1.75;
-  margin-bottom: 2rem; max-width: 520px;
-  animation: fadeUp .7s ease .2s both;
-}
-.hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; animation: fadeUp .7s ease .3s both; }
-.btn-primary {
-  background: linear-gradient(135deg, var(--blue), #6B78F7);
-  color: white; padding: .85rem 2rem; border-radius: 50px;
-  font-weight: 700; font-size: 1rem; border: none; cursor: pointer;
-  text-decoration: none; display: inline-block;
-  box-shadow: 0 8px 24px rgba(79,142,247,0.35);
-  transition: transform .2s, box-shadow .2s;
-}
-.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(79,142,247,0.45); }
-.btn-secondary {
-  background: white; color: var(--blue); padding: .85rem 2rem; border-radius: 50px;
-  font-weight: 700; font-size: 1rem; border: 2px solid rgba(79,142,247,0.3);
-  cursor: pointer; text-decoration: none; display: inline-block;
-  transition: all .2s;
-}
-.btn-secondary:hover { border-color: var(--blue); box-shadow: 0 8px 20px rgba(79,142,247,0.15); transform: translateY(-2px); }
-.hero-stats { display: flex; gap: 2rem; margin-top: 2.5rem; animation: fadeUp .7s ease .4s both; }
-.hero-stat strong { display: block; font-family: 'Outfit'; font-size: 1.6rem; font-weight: 800; color: var(--dark); }
-.hero-stat span { font-size: .8rem; color: var(--muted); font-weight: 500; }
-.hero-visual { display: flex; align-items: center; justify-content: center; animation: fadeUp .8s ease .2s both; }
-.hero-card-stack { position: relative; width: 100%; max-width: 440px; }
-.hero-main-card {
-  background: white; border-radius: 24px; padding: 2rem;
-  box-shadow: 0 20px 60px rgba(79,142,247,0.15);
-  border: 1px solid rgba(79,142,247,0.1);
-}
-.hero-avatar-row { display: flex; gap: .75rem; align-items: center; margin-bottom: 1.5rem; }
-.avatar { width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 700; color: white; }
-.avatar-info strong { display: block; font-size: .95rem; font-weight: 700; }
-.avatar-info span { font-size: .78rem; color: var(--muted); }
-.progress-label { display: flex; justify-content: space-between; font-size: .8rem; font-weight: 600; margin-bottom: .4rem; }
-.progress-bar { background: var(--grey); border-radius: 50px; height: 8px; margin-bottom: 1rem; overflow: hidden; }
-.progress-fill { height: 100%; border-radius: 50px; background: linear-gradient(90deg, var(--blue), var(--purple)); }
-.floating-chip {
-  position: absolute; background: white; border-radius: 16px; padding: .6rem 1rem;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12); font-size: .82rem; font-weight: 600;
-  display: flex; align-items: center; gap: .4rem;
-}
-.chip1 { top: -20px; right: -20px; animation: float 3s ease-in-out infinite; }
-.chip2 { bottom: 20px; left: -30px; animation: float 3.5s ease-in-out infinite reverse; }
-.chip3 { top: 50%; right: -35px; animation: float 4s ease-in-out infinite; }
-@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
-@keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
-
-/* ── SECTION BASE ── */
-section { padding: 90px 5%; }
-.section-tag {
-  display: inline-block; background: linear-gradient(135deg, rgba(79,142,247,0.12), rgba(200,182,255,0.15));
-  color: var(--blue); font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
-  padding: .35rem 1rem; border-radius: 50px; margin-bottom: 1rem;
-  border: 1px solid rgba(79,142,247,0.2);
-}
-.section-title { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; color: var(--dark); margin-bottom: 1rem; line-height: 1.2; }
-.section-sub { font-size: 1.05rem; color: var(--muted); max-width: 560px; line-height: 1.7; }
-.text-center { text-align: center; }
-.text-center .section-sub { margin: 0 auto; }
-
-/* ── WHY CHOOSE ── */
-.why-section { background: var(--grey); }
-.features-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.2rem; margin-top: 3rem; }
-.feature-card {
-  background: white; border-radius: 20px; padding: 1.5rem;
-  border: 1px solid var(--border); transition: all .3s;
-  display: flex; gap: 1rem; align-items: flex-start;
-}
-.feature-card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(79,142,247,0.12); border-color: rgba(79,142,247,0.3); }
-.feature-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
-.feature-card h4 { font-size: .95rem; font-weight: 700; color: var(--dark); margin-bottom: .3rem; }
-.feature-card p { font-size: .82rem; color: var(--muted); line-height: 1.5; }
-
-/* ── COURSES ── */
-.courses-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
-.course-card {
-  background: white; border-radius: 24px; overflow: hidden;
-  border: 1px solid var(--border); transition: all .3s;
-  display: flex; flex-direction: column;
-}
-.course-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
-.course-header { padding: 2rem 1.8rem 1.2rem; }
-.course-icon { font-size: 2.2rem; margin-bottom: 1rem; }
-.course-card h3 { font-size: 1.2rem; font-weight: 800; color: var(--dark); margin-bottom: .6rem; }
-.course-card p { font-size: .85rem; color: var(--muted); line-height: 1.6; }
-.course-features { padding: 0 1.8rem 1.5rem; list-style: none; }
-.course-features li { font-size: .83rem; padding: .4rem 0; border-bottom: 1px solid var(--border); color: var(--text); display: flex; gap: .5rem; }
-.course-features li::before { content: '✓'; color: #22C55E; font-weight: 700; }
-.course-footer { padding: 1.2rem 1.8rem; margin-top: auto; border-top: 1px solid var(--border); }
-.btn-outline {
-  display: inline-block; padding: .6rem 1.4rem; border: 2px solid var(--blue);
-  color: var(--blue); border-radius: 50px; font-weight: 700; font-size: .85rem;
-  text-decoration: none; transition: all .2s; cursor: pointer; background: transparent;
-}
-.btn-outline:hover { background: var(--blue); color: white; }
-
-/* ── PROCESS ── */
-.process-section { background: linear-gradient(135deg, #EEF5FF, #F0EEFF); }
-.steps-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 3rem; position: relative; }
-.step-card {
-  background: white; border-radius: 20px; padding: 1.8rem 1.4rem; text-align: center;
-  border: 1px solid rgba(79,142,247,0.15); position: relative; transition: all .3s;
-}
-.step-card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(79,142,247,0.15); }
-.step-num {
-  width: 48px; height: 48px; border-radius: 50%;
-  background: linear-gradient(135deg, var(--blue), var(--purple));
-  color: white; font-family: 'Outfit'; font-weight: 800; font-size: 1.1rem;
-  display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;
-}
-.step-icon { font-size: 1.6rem; margin-bottom: .7rem; }
-.step-card h4 { font-size: .95rem; font-weight: 700; color: var(--dark); margin-bottom: .4rem; }
-.step-card p { font-size: .8rem; color: var(--muted); line-height: 1.5; }
-
-/* ── TESTIMONIALS ── */
-.testimonials-section { background: var(--dark); color: white; }
-.testimonials-section .section-title { color: white; }
-.testimonials-section .section-sub { color: rgba(255,255,255,0.6); }
-.testimonials-section .section-tag { background: rgba(79,142,247,0.2); border-color: rgba(79,142,247,0.3); }
-.testimonial-track-wrap { overflow: hidden; margin-top: 3rem; }
-.testimonial-track { display: flex; gap: 1.5rem; transition: transform .5s ease; }
-.testimonial-card {
-  min-width: 340px; background: rgba(255,255,255,0.06);
-  backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 24px; padding: 2rem; flex-shrink: 0;
-}
-.stars { color: #FBBF24; font-size: 1rem; margin-bottom: 1rem; letter-spacing: 2px; }
-.testimonial-text { font-size: .92rem; line-height: 1.7; color: rgba(255,255,255,0.85); margin-bottom: 1.5rem; font-style: italic; }
-.testimonial-author { display: flex; align-items: center; gap: .8rem; }
-.author-avatar { width: 46px; height: 46px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 700; color: white; }
-.author-name { font-weight: 700; font-size: .92rem; }
-.author-course { font-size: .78rem; color: rgba(255,255,255,0.5); }
-.testimonial-controls { display: flex; gap: .7rem; justify-content: center; margin-top: 2rem; }
-.t-dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.2); cursor: pointer; transition: all .3s; }
-.t-dot.active { background: var(--blue); width: 28px; border-radius: 5px; }
-
-/* ── STATS ── */
-.stats-section { background: linear-gradient(135deg, var(--blue), #6B78F7); color: white; padding: 70px 5%; }
-.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; max-width: 900px; margin: auto; text-align: center; }
-.stat-item strong { display: block; font-family: 'Outfit'; font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 900; line-height: 1; }
-.stat-item span { font-size: .9rem; opacity: .85; margin-top: .4rem; display: block; font-weight: 500; }
-.stat-item .stat-num { transition: all .3s; }
-
-/* ── ONLINE/OFFLINE ── */
-.mode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem; }
-.mode-card {
-  border-radius: 28px; padding: 2.5rem; position: relative; overflow: hidden;
-}
-.mode-card.online { background: linear-gradient(135deg, #EEF5FF, #E8EEFF); }
-.mode-card.offline { background: linear-gradient(135deg, #F0EEFF, #FEECFF); }
-.mode-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-.mode-card h3 { font-size: 1.5rem; font-weight: 800; color: var(--dark); margin-bottom: 1rem; }
-.mode-list { list-style: none; display: flex; flex-direction: column; gap: .7rem; }
-.mode-list li { font-size: .92rem; color: var(--text); display: flex; gap: .6rem; align-items: flex-start; }
-.mode-list li span { color: var(--blue); font-weight: 700; }
-
-/* ── INSTRUCTORS ── */
-.instructors-section { background: var(--grey); }
-.instructors-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
-.instructor-card {
-  background: white; border-radius: 24px; overflow: hidden;
-  border: 1px solid var(--border); transition: all .3s; text-align: center;
-}
-.instructor-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(79,142,247,0.15); }
-.instructor-avatar { height: 140px; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
-.instructor-body { padding: 1.2rem; }
-.instructor-body h4 { font-size: 1.1rem; font-weight: 800; color: var(--dark); margin-bottom: .3rem; }
-.instructor-body .title { font-size: .82rem; color: var(--blue); font-weight: 600; margin-bottom: .6rem; }
-.instructor-body p { font-size: .8rem; color: var(--muted); line-height: 1.5; }
-.instructor-tags { display: flex; flex-wrap: wrap; gap: .4rem; justify-content: center; margin-top: .8rem; }
-.instructor-tags span { background: var(--grey); font-size: .72rem; padding: .25rem .7rem; border-radius: 50px; color: var(--text); font-weight: 600; }
-
-/* ── FAQ ── */
-.faq-section { background: var(--cream); }
-.faq-list { margin-top: 3rem; max-width: 760px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; gap: 1rem; }
-.faq-item { background: white; border-radius: 16px; border: 1px solid var(--border); overflow: hidden; }
-.faq-q {
-  width: 100%; background: none; border: none; padding: 1.2rem 1.5rem;
-  display: flex; justify-content: space-between; align-items: center;
-  cursor: pointer; font-family: 'Outfit'; font-weight: 700; font-size: 1rem; color: var(--dark);
-  text-align: left;
-}
-.faq-q .faq-icon { width: 28px; height: 28px; border-radius: 50%; background: var(--grey); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all .3s; font-size: .9rem; }
-.faq-item.open .faq-icon { background: var(--blue); color: white; transform: rotate(45deg); }
-.faq-a { max-height: 0; overflow: hidden; transition: max-height .4s ease, padding .3s; }
-.faq-a-inner { padding: 0 1.5rem 1.2rem; font-size: .9rem; color: var(--muted); line-height: 1.7; }
-
-/* ── CONTACT ── */
-.contact-section { background: linear-gradient(135deg, var(--grey), #F0EEFF); }
-.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; margin-top: 3rem; align-items: start; }
-.contact-info h3 { font-size: 1.6rem; font-weight: 800; color: var(--dark); margin-bottom: 1rem; }
-.contact-info p { color: var(--muted); line-height: 1.7; margin-bottom: 2rem; }
-.contact-chips { display: flex; flex-direction: column; gap: .8rem; }
-.contact-chip {
-  display: flex; align-items: center; gap: .8rem;
-  background: white; border-radius: 14px; padding: .9rem 1.2rem;
-  border: 1px solid var(--border); text-decoration: none; color: var(--text);
-  font-weight: 600; font-size: .88rem; transition: all .2s;
-}
-.contact-chip:hover { border-color: var(--blue); box-shadow: 0 6px 20px rgba(79,142,247,0.12); transform: translateX(4px); }
-.contact-chip .chip-icon { font-size: 1.3rem; width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; }
-.contact-form { background: white; border-radius: 28px; padding: 2.5rem; box-shadow: 0 10px 40px rgba(0,0,0,0.07); border: 1px solid var(--border); }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-.form-group { display: flex; flex-direction: column; gap: .4rem; margin-bottom: 1rem; }
-.form-group label { font-size: .82rem; font-weight: 700; color: var(--dark); }
-.form-group input, .form-group select, .form-group textarea {
-  border: 1.5px solid var(--border); border-radius: 12px; padding: .75rem 1rem;
-  font-family: 'Plus Jakarta Sans'; font-size: .9rem; color: var(--text);
-  transition: border-color .2s; outline: none; background: var(--grey);
-}
-.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--blue); background: white; box-shadow: 0 0 0 3px rgba(79,142,247,0.1); }
-.form-group textarea { resize: vertical; min-height: 90px; }
-.form-btns { display: flex; gap: .8rem; flex-wrap: wrap; }
-
-/* ── FOOTER ── */
-footer { background: var(--dark); color: white; padding: 70px 5% 30px; }
-.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 3rem; margin-bottom: 3rem; }
-.footer-brand .logo { font-family: 'Outfit'; font-size: 1.6rem; font-weight: 800; margin-bottom: 1rem; }
-.footer-brand .logo span { color: var(--coral); }
-.footer-brand p { font-size: .87rem; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 1.2rem; }
-.social-row { display: flex; gap: .7rem; }
-.social-btn { width: 38px; height: 38px; border-radius: 10px; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; font-size: 1rem; transition: all .2s; text-decoration: none; }
-.social-btn:hover { background: var(--blue); transform: translateY(-2px); }
-.footer-col h5 { font-size: .9rem; font-weight: 700; margin-bottom: 1.2rem; color: white; }
-.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: .7rem; }
-.footer-col a { font-size: .85rem; color: rgba(255,255,255,0.5); text-decoration: none; transition: color .2s; }
-.footer-col a:hover { color: white; }
-.newsletter-form { display: flex; gap: .5rem; margin-top: 1rem; }
-.newsletter-form input { flex: 1; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: .6rem .9rem; color: white; font-family: 'Plus Jakarta Sans'; font-size: .85rem; outline: none; }
-.newsletter-form input::placeholder { color: rgba(255,255,255,0.35); }
-.newsletter-form button { background: var(--blue); color: white; border: none; border-radius: 12px; padding: .6rem 1rem; cursor: pointer; font-weight: 700; font-size: .82rem; transition: all .2s; }
-.newsletter-form button:hover { background: #6B78F7; }
-.footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; }
-.footer-bottom p { font-size: .82rem; color: rgba(255,255,255,0.4); }
-
-/* ── STICKY WA ── */
-.wa-btn {
-  position: fixed; bottom: 24px; right: 24px; z-index: 200;
-  width: 58px; height: 58px; border-radius: 50%; background: #25D366;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.6rem; box-shadow: 0 8px 24px rgba(37,211,102,0.4);
-  text-decoration: none; transition: all .2s;
-}
-.wa-btn:hover { transform: scale(1.1); box-shadow: 0 12px 30px rgba(37,211,102,0.5); }
-
-/* ── OBSERVED ANIMATIONS ── */
-.reveal { opacity: 0; transform: translateY(30px); transition: opacity .6s ease, transform .6s ease; }
-.reveal.visible { opacity: 1; transform: none; }
-
-/* ── RESPONSIVE ── */
-@media(max-width:900px){
-  .hero-inner { grid-template-columns: 1fr; }
-  .hero-visual { display: none; }
-  .stats-grid { grid-template-columns: repeat(2,1fr); }
-  .mode-grid { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
-  .form-row { grid-template-columns: 1fr; }
-}
-@media(max-width:600px){
-  .nav-links { display: none; }
-  .nav-cta { display: none; }
-  .hamburger { display: flex; }
-  .stats-grid { grid-template-columns: repeat(2,1fr); }
-  .footer-grid { grid-template-columns: 1fr; }
-  .hero-stats { flex-wrap: wrap; gap: 1.2rem; }
-  section { padding: 60px 5%; }
-}
-</style>
+    /* Gradient Background Blobs Animation */
+    @keyframes rotateBlobs {
+      0% { transform: translate(0px, 0px) scale(1); }
+      33% { transform: translate(30px, -50px) scale(1.1); }
+      66% { transform: translate(-20px, 20px) scale(0.95); }
+      100% { transform: translate(0px, 0px) scale(1); }
+    }
+    .animated-blob {
+      animation: rotateBlobs 12s infinite alternate ease-in-out;
+    }
+  </style>
 </head>
-<body>
+<body class="bg-white dark:bg-dark-bg text-slate-800 dark:text-dark-text transition-colors duration-300 overflow-x-hidden antialiased">
 
-<!-- NAV -->
-<nav id="navbar">
-  <div class="nav-logo">Fuzion<span>.</span>Academy</div>
-  <ul class="nav-links">
-    <li><a href="#courses">Courses</a></li>
-    <li><a href="#process">How It Works</a></li>
-    <li><a href="#testimonials">Reviews</a></li>
-    <li><a href="#faq">FAQ</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <a href="#contact" class="nav-cta">Book Free Demo</a>
-  <div class="hamburger" id="hamburger">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#courses">Courses</a>
-  <a href="#process">How It Works</a>
-  <a href="#testimonials">Reviews</a>
-  <a href="#faq">FAQ</a>
-  <a href="#contact">Contact</a>
-  <a href="#contact" class="btn-primary" style="text-align:center">Book Free Demo</a>
-</div>
+  <!-- ==================== HEADER / NAVIGATION ==================== -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-4 border-b border-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between glass rounded-2xl px-6 py-3 shadow-sm border border-slate-200/50 dark:border-dark-border/40">
+        
+        <!-- Text Logo format -->
+        <a href="#home" class="flex items-center gap-1 font-heading text-2xl font-black text-brand-navy dark:text-white tracking-tight group">
+          Fuzion<span class="text-soft-blue transition-transform duration-300 group-hover:scale-125">.</span>Academy
+        </a>
 
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-blob blob1"></div>
-  <div class="hero-blob blob2"></div>
-  <div class="hero-blob blob3"></div>
-  <div class="hero-inner">
-    <div class="hero-content">
-      <div class="hero-badge"><span class="dot"></span> #1 Spoken English Academy</div>
-      <h1>Speak English <span class="accent">Confidently.</span> Transform Your Future.</h1>
-      <p>Join Fuzion Academy and master Spoken English, Communication Skills, Personality Development, and Interview Preparation through practical, real-world learning.</p>
-      <div class="hero-btns">
-        <a href="#contact" class="btn-primary">📅 Book Free Demo Class</a>
-        <a href="#courses" class="btn-secondary">Explore Courses →</a>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat"><strong>1000+</strong><span>Students Trained</span></div>
-        <div class="hero-stat"><strong>95%</strong><span>Satisfaction Rate</span></div>
-        <div class="hero-stat"><strong>5+</strong><span>Years Excellence</span></div>
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#courses" class="text-sm font-semibold hover:text-soft-blue dark:hover:text-sky-blue transition-colors">Courses</a>
+          <a href="#why" class="text-sm font-semibold hover:text-soft-blue dark:hover:text-sky-blue transition-colors">Why Us</a>
+          <a href="#process" class="text-sm font-semibold hover:text-soft-blue dark:hover:text-sky-blue transition-colors">Process</a>
+          <a href="#founder" class="text-sm font-semibold hover:text-soft-blue dark:hover:text-sky-blue transition-colors">Head Coach</a>
+          <a href="#testimonials" class="text-sm font-semibold hover:text-soft-blue dark:hover:text-sky-blue transition-colors">Reviews</a>
+          <a href="#faq" class="text-sm font-semibold hover:text-soft-blue dark:hover:text-sky-blue transition-colors">FAQ</a>
+          <a href="#contact" class="text-sm font-semibold hover:text-soft-blue dark:hover:text-sky-blue transition-colors">Contact</a>
+        </nav>
+
+        <!-- Right Side CTA and Theme Toggle -->
+        <div class="flex items-center gap-4">
+          <!-- Theme Toggle Button -->
+          <button id="themeToggle" class="p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-dark-card dark:hover:bg-dark-border border border-slate-200 dark:border-dark-border text-slate-700 dark:text-dark-text transition-all duration-300" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon dark:hidden"></i>
+            <i class="fa-solid fa-sun hidden dark:block text-yellow-accent"></i>
+          </button>
+
+          <!-- Book Free Demo CTA -->
+          <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-bold text-white bg-soft-blue hover:bg-blue-600 rounded-xl shadow-lg shadow-soft-blue/20 hover:shadow-soft-blue/30 transition-all duration-300 hover:-translate-y-0.5">
+            Book Free Demo
+          </a>
+
+          <!-- Mobile Hamburger Menu Button -->
+          <button id="mobileMenuBtn" class="md:hidden p-2 text-slate-700 dark:text-dark-text hover:text-soft-blue dark:hover:text-sky-blue transition-colors" aria-label="Open mobile menu">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="hero-card-stack">
-        <div class="hero-main-card">
-          <div class="hero-avatar-row">
-            <div class="avatar" style="background:linear-gradient(135deg,#4F8EF7,#C8B6FF)">P</div>
-            <div class="avatar-info">
-              <strong>Priya Sharma</strong>
-              <span>Spoken English Course</span>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="fixed inset-0 z-40 bg-slate-900/60 backdrop-blur-sm hidden transition-opacity duration-300">
+      <div class="absolute right-0 top-0 h-full w-4/5 max-w-sm bg-white dark:bg-dark-bg p-6 shadow-2xl flex flex-col justify-between border-l border-slate-200 dark:border-dark-border">
+        <div>
+          <div class="flex items-center justify-between mb-8">
+            <span class="font-heading text-2xl font-black text-brand-navy dark:text-white">Fuzion<span class="text-soft-blue">.</span>Academy</span>
+            <button id="closeMobileMenu" class="p-2 text-slate-700 dark:text-dark-text" aria-label="Close menu">
+              <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+          </div>
+          <nav class="flex flex-col gap-5">
+            <a href="#courses" class="mobile-nav-link text-lg font-bold border-b border-slate-100 dark:border-dark-border/40 pb-2">Courses</a>
+            <a href="#why" class="mobile-nav-link text-lg font-bold border-b border-slate-100 dark:border-dark-border/40 pb-2">Why Us</a>
+            <a href="#process" class="mobile-nav-link text-lg font-bold border-b border-slate-100 dark:border-dark-border/40 pb-2">Process</a>
+            <a href="#founder" class="mobile-nav-link text-lg font-bold border-b border-slate-100 dark:border-dark-border/40 pb-2">Head Coach</a>
+            <a href="#testimonials" class="mobile-nav-link text-lg font-bold border-b border-slate-100 dark:border-dark-border/40 pb-2">Reviews</a>
+            <a href="#faq" class="mobile-nav-link text-lg font-bold border-b border-slate-100 dark:border-dark-border/40 pb-2">FAQ</a>
+            <a href="#contact" class="mobile-nav-link text-lg font-bold border-b border-slate-100 dark:border-dark-border/40 pb-2">Contact</a>
+          </nav>
+        </div>
+        <div class="flex flex-col gap-3 mt-8">
+          <a href="tel:+919582774387" class="flex items-center justify-center gap-2 border-2 border-slate-200 dark:border-dark-border py-3 rounded-xl font-bold"><i class="fa-solid fa-phone text-soft-blue"></i> Call Us</a>
+          <a href="#contact" class="bg-soft-blue text-white text-center py-3.5 rounded-xl font-bold hover:bg-blue-600 transition-colors">Book Free Demo Class</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="home" class="relative pt-32 pb-20 md:py-36 bg-gradient-to-tr from-soft-cream/60 via-light-grey to-sky-blue/20 dark:from-dark-bg dark:via-dark-bg dark:to-brand-navy/20 overflow-hidden min-h-screen flex items-center">
+    
+    <!-- Animated Gradient Background Blobs -->
+    <div class="absolute top-1/4 right-0 w-96 h-96 bg-sky-blue/30 dark:bg-soft-blue/10 rounded-full blur-3xl animated-blob -z-10"></div>
+    <div class="absolute bottom-10 left-10 w-[500px] h-[500px] bg-soft-purple/35 dark:bg-brand-navy/15 rounded-full blur-[100px] animated-blob -z-10" style="animation-delay: 2s;"></div>
+    <div class="absolute top-10 left-1/3 w-72 h-72 bg-mint-green/20 dark:bg-brand-green/5 rounded-full blur-2xl animated-blob -z-10" style="animation-delay: 4s;"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <!-- Hero Text Contents -->
+        <div class="flex flex-col justify-center text-center lg:text-left">
+          
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2.5 bg-white dark:bg-dark-card border border-soft-blue/20 dark:border-dark-border/60 shadow-md shadow-soft-blue/5 rounded-full px-4 py-2 w-fit mx-auto lg:mx-0 mb-6 transition-transform hover:scale-105 duration-300">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+            <span class="text-xs font-bold text-soft-blue dark:text-sky-blue uppercase tracking-widest font-heading">💯 #1 Spoken English Academy</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black font-heading leading-tight tracking-tight text-brand-navy dark:text-white mb-6">
+            Speak English <br class="hidden sm:block">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-soft-blue via-soft-purple to-brand-green">Confidently.</span><br>
+            Transform Your Future.
+          </h1>
+
+          <!-- Subheading Text -->
+          <p class="text-base sm:text-lg text-slate-600 dark:text-dark-muted max-w-xl mx-auto lg:mx-0 leading-relaxed mb-8">
+            Join <span class="font-bold text-soft-blue dark:text-sky-blue">Fuzion Academy</span> and master Spoken English, Communication Skills, Personality Development, and Interview Preparation through practical, interactive, and real-world learning.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-soft-blue hover:bg-blue-600 rounded-2xl shadow-xl shadow-soft-blue/25 hover:shadow-soft-blue/35 transition-all duration-300 hover:-translate-y-1">
+              📅 Book Free Demo Class
+            </a>
+            <a href="#courses" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-brand-navy dark:text-white bg-white hover:bg-slate-50 dark:bg-dark-card dark:hover:bg-dark-border border border-slate-200 dark:border-dark-border rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              Explore Courses &nbsp; <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+          </div>
+
+          <!-- Trust Badges Band -->
+          <div class="grid grid-cols-3 gap-4 sm:gap-6 mt-12 border-t border-slate-200 dark:border-dark-border pt-8 text-left">
+            <div>
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-navy dark:text-white font-heading">1000+</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted font-medium mt-1">Students Trained</p>
+            </div>
+            <div>
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-navy dark:text-white font-heading">95%</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted font-medium mt-1">Satisfaction Rate</p>
+            </div>
+            <div>
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-navy dark:text-white font-heading">5+ Yrs</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted font-medium mt-1">Excellence</p>
             </div>
           </div>
-          <div class="progress-label"><span>Speaking Fluency</span><span>85%</span></div>
-          <div class="progress-bar"><div class="progress-fill" style="width:85%"></div></div>
-          <div class="progress-label"><span>Confidence Level</span><span>92%</span></div>
-          <div class="progress-bar"><div class="progress-fill" style="width:92%;background:linear-gradient(90deg,#C8B6FF,#FF7F7F)"></div></div>
-          <div class="progress-label"><span>Grammar Accuracy</span><span>78%</span></div>
-          <div class="progress-bar"><div class="progress-fill" style="width:78%;background:linear-gradient(90deg,#D9F8E5,#4F8EF7)"></div></div>
         </div>
-        <div class="floating-chip chip1" style="color:#4F8EF7">🎯 <span>Mock Interview Done!</span></div>
-        <div class="floating-chip chip2" style="color:#22C55E">⭐ <span>5.0 Rating</span></div>
-        <div class="floating-chip chip3" style="color:#C8B6FF">🏅 <span>Certificate Earned</span></div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- WHY CHOOSE -->
-<section class="why-section" id="why">
-  <div class="text-center reveal">
-    <div class="section-tag">Why Fuzion Academy</div>
-    <h2 class="section-title">Everything You Need to <br>Communicate with Confidence</h2>
-    <p class="section-sub">We don't just teach English — we transform how you think, speak, and carry yourself in every situation.</p>
-  </div>
-  <div class="features-grid">
-    <div class="feature-card reveal">
-      <div class="feature-icon" style="background:#EEF5FF">🎙️</div>
-      <div><h4>Live Interactive Classes</h4><p>Real-time sessions with expert trainers, not just recorded videos.</p></div>
-    </div>
-    <div class="feature-card reveal">
-      <div class="feature-icon" style="background:#F0EEFF">📈</div>
-      <div><h4>Beginner to Advanced</h4><p>Structured curriculum from absolute zero to fluent English speaker.</p></div>
-    </div>
-    <div class="feature-card reveal">
-      <div class="feature-icon" style="background:#EEF5FF">🧠</div>
-      <div><h4>Personality Development</h4><p>Build confidence, body language, and personal branding skills.</p></div>
-    </div>
-    <div class="feature-card reveal">
-      <div class="feature-icon" style="background:#F0FFF8">💼</div>
-      <div><h4>Interview Preparation</h4><p>Mock interviews, HR questions, and professional grooming sessions.</p></div>
-    </div>
-    <div class="feature-card reveal">
-      <div class="feature-icon" style="background:#FFF5F5">🗣️</div>
-      <div><h4>Group Discussions</h4><p>Practice real-world conversations and build social confidence.</p></div>
-    </div>
-    <div class="feature-card reveal">
-      <div class="feature-icon" style="background:#FFFAEE">🎤</div>
-      <div><h4>Public Speaking</h4><p>Overcome stage fright and speak powerfully before any audience.</p></div>
-    </div>
-    <div class="feature-card reveal">
-      <div class="feature-icon" style="background:#EEF5FF">📝</div>
-      <div><h4>Grammar Made Easy</h4><p>Simple, practical grammar lessons you'll actually use every day.</p></div>
-    </div>
-    <div class="feature-card reveal">
-      <div class="feature-icon" style="background:#F0FFF8">⏰</div>
-      <div><h4>Daily Practice Sessions</h4><p>Consistent speaking exercises that build lasting habit and fluency.</p></div>
-    </div>
-    <div class="feature-card reveal">
-      <div class="feature-icon" style="background:#F0EEFF">👨‍🏫</div>
-      <div><h4>Expert Trainers</h4><p>Learn from certified communication coaches with real industry experience.</p></div>
-    </div>
-    <div class="feature-card reveal">
-      <div class="feature-icon" style="background:#F0FFF8">💬</div>
-      <div><h4>WhatsApp Support</h4><p>Get doubts solved and stay connected with your trainer instantly.</p></div>
-    </div>
-    <div class="feature-card reveal">
-      <div class="feature-icon" style="background:#EEF5FF">🌐</div>
-      <div><h4>Online & Offline Classes</h4><p>Attend from home or visit our center — the choice is yours.</p></div>
-    </div>
-    <div class="feature-card reveal">
-      <div class="feature-icon" style="background:#FFFAEE">🕐</div>
-      <div><h4>Flexible Timings</h4><p>Morning, evening, and weekend batches for every schedule.</p></div>
-    </div>
-  </div>
-</section>
+        <!-- Hero Graphic Content (Featuring Owner's Formal Picture 4.png) -->
+        <div class="relative flex items-center justify-center lg:justify-end mt-8 lg:mt-0">
+          <div class="absolute w-[90%] h-[90%] rounded-[40px] bg-gradient-to-tr from-sky-blue/30 to-soft-purple/35 dark:from-dark-card dark:to-brand-navy/35 -z-10 blur-xl opacity-80 animate-pulse-slow"></div>
+          
+          <!-- Inner Student Card Dashboard with Head Coach Image -->
+          <div class="relative w-full max-w-[440px] bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-3xl overflow-hidden shadow-2xl transition-transform hover:scale-[1.01] duration-500">
+            <div class="aspect-[4/3] w-full relative overflow-hidden bg-slate-100">
+              <img src="Untitled design/4.png" class="w-full h-full object-cover object-top" alt="Founder & Head Coach - Fuzion Academy">
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent p-6 pt-16">
+                <span class="px-2.5 py-1 bg-soft-blue text-white text-[10px] font-bold uppercase tracking-wider rounded-md">Founder &amp; Chief Mentor</span>
+                <h4 class="text-lg font-black text-white mt-1.5">Coach Saurabh Pandey</h4>
+              </div>
+            </div>
+            
+            <div class="p-6">
+              <div class="flex items-center justify-between text-xs text-slate-500 dark:text-dark-muted font-medium mb-3">
+                <span><i class="fa-solid fa-graduation-cap text-soft-blue mr-1"></i> Interactive Spoken English</span>
+                <span><i class="fa-solid fa-certificate text-brand-green mr-1"></i> Certified Coach</span>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-dark-muted leading-relaxed">"My mission is to equip every student with natural English fluency and the absolute confidence to clear any corporate interview."</p>
+            </div>
+          </div>
 
-<!-- COURSES -->
-<section id="courses">
-  <div class="text-center reveal">
-    <div class="section-tag">Our Courses</div>
-    <h2 class="section-title">Find the Right Course for You</h2>
-    <p class="section-sub">Practical, results-driven programs designed to take you from hesitant to confident in weeks.</p>
-  </div>
-  <div class="courses-grid">
-    <div class="course-card reveal" style="border-top:4px solid #4F8EF7">
-      <div class="course-header" style="background:linear-gradient(135deg,#EEF5FF,white)">
-        <div class="course-icon">🗣️</div>
-        <h3>Spoken English Course</h3>
-        <p>From absolute beginner to confident English speaker through daily structured practice.</p>
-      </div>
-      <ul class="course-features">
-        <li>Beginner to Advanced Track</li>
-        <li>Daily Speaking Practice</li>
-        <li>Vocabulary Building</li>
-        <li>Fluency Development</li>
-      </ul>
-      <div class="course-footer">
-        <a href="#contact" class="btn-outline">Learn More →</a>
-      </div>
-    </div>
-    <div class="course-card reveal" style="border-top:4px solid #C8B6FF">
-      <div class="course-header" style="background:linear-gradient(135deg,#F0EEFF,white)">
-        <div class="course-icon">💼</div>
-        <h3>Communication Skills</h3>
-        <p>Master the art of professional communication for the modern workplace.</p>
-      </div>
-      <ul class="course-features">
-        <li>Professional Communication</li>
-        <li>Confidence Building</li>
-        <li>Presentation Skills</li>
-        <li>Workplace Communication</li>
-      </ul>
-      <div class="course-footer">
-        <a href="#contact" class="btn-outline">Learn More →</a>
-      </div>
-    </div>
-    <div class="course-card reveal" style="border-top:4px solid #FF7F7F">
-      <div class="course-header" style="background:linear-gradient(135deg,#FFF5F5,white)">
-        <div class="course-icon">🎯</div>
-        <h3>Interview Preparation</h3>
-        <p>Crack every interview with our structured, practical preparation program.</p>
-      </div>
-      <ul class="course-features">
-        <li>HR Interview Questions</li>
-        <li>Mock Interviews</li>
-        <li>Resume Guidance</li>
-        <li>Professional Grooming</li>
-      </ul>
-      <div class="course-footer">
-        <a href="#contact" class="btn-outline">Learn More →</a>
-      </div>
-    </div>
-    <div class="course-card reveal" style="border-top:4px solid #22C55E">
-      <div class="course-header" style="background:linear-gradient(135deg,#F0FFF8,white)">
-        <div class="course-icon">🌟</div>
-        <h3>Personality Development</h3>
-        <p>Unleash your true potential with comprehensive personality and leadership training.</p>
-      </div>
-      <ul class="course-features">
-        <li>Confidence Building</li>
-        <li>Body Language Mastery</li>
-        <li>Leadership Skills</li>
-        <li>Personal Branding</li>
-      </ul>
-      <div class="course-footer">
-        <a href="#contact" class="btn-outline">Learn More →</a>
-      </div>
-    </div>
-  </div>
-</section>
+          <!-- Floating Badges -->
+          <div class="absolute -top-4 -right-2 sm:-right-4 bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border shadow-lg rounded-2xl p-3 flex items-center gap-3 animate-float-y select-none">
+            <span class="text-2xl">🎯</span>
+            <div class="text-left">
+              <h5 class="text-xs font-black text-brand-navy dark:text-white">Mock Interview</h5>
+              <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Corporate Drills</p>
+            </div>
+          </div>
 
-<!-- PROCESS -->
-<section class="process-section" id="process">
-  <div class="text-center reveal">
-    <div class="section-tag">How It Works</div>
-    <h2 class="section-title">Your Journey to Fluent English</h2>
-    <p class="section-sub">A simple, structured process to take you from where you are to where you want to be.</p>
-  </div>
-  <div class="steps-grid">
-    <div class="step-card reveal">
-      <div class="step-num">1</div>
-      <div class="step-icon">🎁</div>
-      <h4>Free Demo Class</h4>
-      <p>Experience our teaching style before you commit. Absolutely free, zero pressure.</p>
-    </div>
-    <div class="step-card reveal">
-      <div class="step-num">2</div>
-      <div class="step-icon">🔍</div>
-      <h4>Assessment</h4>
-      <p>We evaluate your current level to place you in the perfect learning track.</p>
-    </div>
-    <div class="step-card reveal">
-      <div class="step-num">3</div>
-      <div class="step-icon">📋</div>
-      <h4>Enroll in Course</h4>
-      <p>Choose your program and get instant access to all learning materials.</p>
-    </div>
-    <div class="step-card reveal">
-      <div class="step-num">4</div>
-      <div class="step-icon">🗓️</div>
-      <h4>Daily Practice</h4>
-      <p>Consistent daily sessions build the speaking habit that creates fluency.</p>
-    </div>
-    <div class="step-card reveal">
-      <div class="step-num">5</div>
-      <div class="step-icon">💪</div>
-      <h4>Confidence Activities</h4>
-      <p>GDs, public speaking, mock interviews — real-world practice for real results.</p>
-    </div>
-    <div class="step-card reveal">
-      <div class="step-num">6</div>
-      <div class="step-icon">🏆</div>
-      <h4>Fluent Communicator</h4>
-      <p>Walk out transformed, certified, and ready to conquer any room you enter.</p>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="testimonials-section" id="testimonials">
-  <div class="text-center reveal">
-    <div class="section-tag">Student Stories</div>
-    <h2 class="section-title">Real Results. Real Students.</h2>
-    <p class="section-sub">Over 1000 students have transformed their communication with Fuzion Academy.</p>
-  </div>
-  <div class="testimonial-track-wrap reveal">
-    <div class="testimonial-track" id="tTrack">
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p class="testimonial-text">"I joined Fuzion Academy as a complete beginner. Within 3 months I was confidently giving presentations at my office. The daily practice sessions made all the difference!"</p>
-        <div class="testimonial-author">
-          <div class="author-avatar" style="background:linear-gradient(135deg,#4F8EF7,#C8B6FF)">A</div>
-          <div><div class="author-name">Aarav Mehta</div><div class="author-course">Spoken English Course</div></div>
+          <div class="absolute bottom-6 -left-2 sm:-left-6 bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border shadow-lg rounded-2xl p-3.5 flex items-center gap-3 animate-float-y-reverse select-none">
+            <span class="text-2xl">⭐</span>
+            <div class="text-left">
+              <h5 class="text-xs font-black text-brand-navy dark:text-white">5.0 Star Rating</h5>
+              <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Student Reviews</p>
+            </div>
+          </div>
         </div>
+
       </div>
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p class="testimonial-text">"The interview preparation module is absolutely top-notch. I cracked my dream company's HR round in the first attempt after practicing mock interviews here!"</p>
-        <div class="testimonial-author">
-          <div class="author-avatar" style="background:linear-gradient(135deg,#FF7F7F,#FFEAA7)">S</div>
-          <div><div class="author-name">Sneha Kapoor</div><div class="author-course">Interview Preparation</div></div>
+    </div>
+  </section>
+
+  <!-- ==================== TRUST BADGES BANNER ==================== -->
+  <section class="py-10 bg-slate-50 dark:bg-dark-card/30 border-y border-slate-200/50 dark:border-dark-border/40 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap justify-center items-center gap-8 sm:gap-12 md:gap-16 text-slate-400 dark:text-slate-600 font-heading font-extrabold text-sm uppercase tracking-widest text-center">
+        <div class="flex items-center gap-3 hover:text-soft-blue dark:hover:text-sky-blue transition-colors duration-300"><i class="fa-solid fa-certificate text-lg"></i> Certified Coaches</div>
+        <div class="flex items-center gap-3 hover:text-soft-blue dark:hover:text-sky-blue transition-colors duration-300"><i class="fa-solid fa-microphone text-lg"></i> 100% Practical Activities</div>
+        <div class="flex items-center gap-3 hover:text-soft-blue dark:hover:text-sky-blue transition-colors duration-300"><i class="fa-solid fa-clock text-lg"></i> Flexible Batches</div>
+        <div class="flex items-center gap-3 hover:text-soft-blue dark:hover:text-sky-blue transition-colors duration-300"><i class="fa-solid fa-indian-rupee-sign text-lg"></i> Affordable Fees</div>
+        <div class="flex items-center gap-3 hover:text-soft-blue dark:hover:text-sky-blue transition-colors duration-300"><i class="fa-solid fa-user-gear text-lg"></i> Direct WhatsApp Support</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHY CHOOSE FUZION ACADEMY ==================== -->
+  <section id="why" class="py-24 bg-white dark:bg-dark-bg relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+        <span class="inline-block px-4 py-1.5 bg-soft-blue/10 dark:bg-soft-blue/5 border border-soft-blue/20 dark:border-dark-border text-soft-blue dark:text-sky-blue text-xs font-bold rounded-full uppercase tracking-wider mb-3">Why Fuzion Academy</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-brand-navy dark:text-white tracking-tight mb-4">Everything You Need to <br class="hidden sm:block">Communicate with Confidence</h2>
+        <p class="text-base sm:text-lg text-slate-500 dark:text-dark-muted leading-relaxed">We don't just teach grammar rules — we completely transform how you think, speak, and present yourself in professional and social situations.</p>
+      </div>
+
+      <!-- Feature Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        
+        <!-- Feature Card 1 -->
+        <div class="group bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border/70 hover:border-soft-blue dark:hover:border-sky-blue rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-soft-blue/5 reveal">
+          <div class="w-12 h-12 bg-soft-blue/10 text-soft-blue rounded-xl flex items-center justify-center text-xl font-bold mb-5 transition-transform duration-500 group-hover:rotate-6"><i class="fa-solid fa-video"></i></div>
+          <h3 class="font-extrabold text-lg text-brand-navy dark:text-white mb-2">Live Interactive Classes</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Real-time learning and conversations with live trainers, never boring pre-recorded screen logs.</p>
         </div>
-      </div>
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p class="testimonial-text">"My confidence went from 0 to 100 in just 2 months. The personality development classes changed how I carry myself in meetings and social situations."</p>
-        <div class="testimonial-author">
-          <div class="author-avatar" style="background:linear-gradient(135deg,#D9F8E5,#22C55E)">R</div>
-          <div><div class="author-name">Rahul Verma</div><div class="author-course">Personality Development</div></div>
+
+        <!-- Feature Card 2 -->
+        <div class="group bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border/70 hover:border-soft-blue dark:hover:border-sky-blue rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-soft-blue/5 reveal" style="transition-delay: 50ms;">
+          <div class="w-12 h-12 bg-sky-blue/20 text-soft-blue dark:text-sky-blue rounded-xl flex items-center justify-center text-xl font-bold mb-5 transition-transform duration-500 group-hover:rotate-6"><i class="fa-solid fa-chart-line"></i></div>
+          <h3 class="font-extrabold text-lg text-brand-navy dark:text-white mb-2">Beginner to Advanced</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">A gradual, well-structured curriculum starting from basic grammar up to corporate standards.</p>
         </div>
-      </div>
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p class="testimonial-text">"Best decision of my career! The online classes are as effective as offline. The WhatsApp support from trainers is incredibly helpful for quick doubts."</p>
-        <div class="testimonial-author">
-          <div class="author-avatar" style="background:linear-gradient(135deg,#C8B6FF,#4F8EF7)">P</div>
-          <div><div class="author-name">Priya Singh</div><div class="author-course">Communication Skills</div></div>
+
+        <!-- Feature Card 3 -->
+        <div class="group bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border/70 hover:border-soft-blue dark:hover:border-sky-blue rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-soft-blue/5 reveal" style="transition-delay: 100ms;">
+          <div class="w-12 h-12 bg-soft-purple/20 text-soft-purple rounded-xl flex items-center justify-center text-xl font-bold mb-5 transition-transform duration-500 group-hover:rotate-6"><i class="fa-solid fa-user-tie"></i></div>
+          <h3 class="font-extrabold text-lg text-brand-navy dark:text-white mb-2">Personality Development</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Build premium body language, confidence levels, mindset reframing, and self-branding details.</p>
         </div>
-      </div>
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p class="testimonial-text">"I used to fear speaking in public. After 3 months at Fuzion Academy, I gave a speech at my college fest to 500 people! The trainers are truly exceptional."</p>
-        <div class="testimonial-author">
-          <div class="author-avatar" style="background:linear-gradient(135deg,#FFEAA7,#FF7F7F)">K</div>
-          <div><div class="author-name">Kartik Joshi</div><div class="author-course">Public Speaking</div></div>
+
+        <!-- Feature Card 4 -->
+        <div class="group bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border/70 hover:border-soft-blue dark:hover:border-sky-blue rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-soft-blue/5 reveal" style="transition-delay: 150ms;">
+          <div class="w-12 h-12 bg-mint-green/30 text-emerald-600 rounded-xl flex items-center justify-center text-xl font-bold mb-5 transition-transform duration-500 group-hover:rotate-6"><i class="fa-solid fa-briefcase"></i></div>
+          <h3 class="font-extrabold text-lg text-brand-navy dark:text-white mb-2">Interview Preparation</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Mock sessions, custom corporate HR questions drills, grooming guidance, and CV optimization support.</p>
         </div>
+
+        <!-- Feature Card 5 -->
+        <div class="group bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border/70 hover:border-soft-blue dark:hover:border-sky-blue rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-soft-blue/5 reveal" style="transition-delay: 200ms;">
+          <div class="w-12 h-12 bg-coral-accent/15 text-coral-accent rounded-xl flex items-center justify-center text-xl font-bold mb-5 transition-transform duration-500 group-hover:rotate-6"><i class="fa-solid fa-comments"></i></div>
+          <h3 class="font-extrabold text-lg text-brand-navy dark:text-white mb-2">Group Discussions</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Weekly live speaking debates and structured conversation groups to defeat hesitancy.</p>
+        </div>
+
+        <!-- Feature Card 6 -->
+        <div class="group bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border/70 hover:border-soft-blue dark:hover:border-sky-blue rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-soft-blue/5 reveal" style="transition-delay: 250ms;">
+          <div class="w-12 h-12 bg-yellow-accent/20 text-yellow-500 dark:text-yellow-accent rounded-xl flex items-center justify-center text-xl font-bold mb-5 transition-transform duration-500 group-hover:rotate-6"><i class="fa-solid fa-microphone-alt"></i></div>
+          <h3 class="font-extrabold text-lg text-brand-navy dark:text-white mb-2">Public Speaking Activities</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Stage performance setups, online presentation activities to wipe out public fear completely.</p>
+        </div>
+
+        <!-- Feature Card 7 -->
+        <div class="group bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border/70 hover:border-soft-blue dark:hover:border-sky-blue rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-soft-blue/5 reveal" style="transition-delay: 300ms;">
+          <div class="w-12 h-12 bg-soft-blue/15 text-soft-blue rounded-xl flex items-center justify-center text-xl font-bold mb-5 transition-transform duration-500 group-hover:rotate-6"><i class="fa-solid fa-spell-check"></i></div>
+          <h3 class="font-extrabold text-lg text-brand-navy dark:text-white mb-2">Grammar Made Easy</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Practical learning pathways, skipping redundant theoretical definitions for quick active speaking.</p>
+        </div>
+
+        <!-- Feature Card 8 -->
+        <div class="group bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border/70 hover:border-soft-blue dark:hover:border-sky-blue rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-soft-blue/5 reveal" style="transition-delay: 350ms;">
+          <div class="w-12 h-12 bg-mint-green/30 text-emerald-600 rounded-xl flex items-center justify-center text-xl font-bold mb-5 transition-transform duration-500 group-hover:rotate-6"><i class="fa-solid fa-repeat"></i></div>
+          <h3 class="font-extrabold text-lg text-brand-navy dark:text-white mb-2">Daily Practice Sessions</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Intense conversation drills to build daily consistency and build muscle memory for language.</p>
+        </div>
+
+        <!-- Feature Card 9 -->
+        <div class="group bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border/70 hover:border-soft-blue dark:hover:border-sky-blue rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-soft-blue/5 reveal" style="transition-delay: 400ms;">
+          <div class="w-12 h-12 bg-soft-purple/20 text-soft-purple rounded-xl flex items-center justify-center text-xl font-bold mb-5 transition-transform duration-500 group-hover:rotate-6"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3 class="font-extrabold text-lg text-brand-navy dark:text-white mb-2">Expert Trainers</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Learn from dedicated, certified, and patient communication coaches with corporate backgrounds.</p>
+        </div>
+
+        <!-- Feature Card 10 -->
+        <div class="group bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border/70 hover:border-soft-blue dark:hover:border-sky-blue rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-soft-blue/5 reveal" style="transition-delay: 450ms;">
+          <div class="w-12 h-12 bg-mint-green/30 text-emerald-600 rounded-xl flex items-center justify-center text-xl font-bold mb-5 transition-transform duration-500 group-hover:rotate-6"><i class="fa-brands fa-whatsapp animate-pulse"></i></div>
+          <h3 class="font-extrabold text-lg text-brand-navy dark:text-white mb-2">WhatsApp Support</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Stay connected with your trainers via instant chat to solve any doubts on the fly.</p>
+        </div>
+
+        <!-- Feature Card 11 -->
+        <div class="group bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border/70 hover:border-soft-blue dark:hover:border-sky-blue rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-soft-blue/5 reveal" style="transition-delay: 500ms;">
+          <div class="w-12 h-12 bg-soft-blue/15 text-soft-blue rounded-xl flex items-center justify-center text-xl font-bold mb-5 transition-transform duration-500 group-hover:rotate-6"><i class="fa-solid fa-laptop-house"></i></div>
+          <h3 class="font-extrabold text-lg text-brand-navy dark:text-white mb-2">Online & Offline Classes</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Join via Google Meet from anywhere in India, or visit our standard physical classes center.</p>
+        </div>
+
+        <!-- Feature Card 12 -->
+        <div class="group bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border/70 hover:border-soft-blue dark:hover:border-sky-blue rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-soft-blue/5 reveal" style="transition-delay: 550ms;">
+          <div class="w-12 h-12 bg-yellow-accent/20 text-yellow-500 dark:text-yellow-accent rounded-xl flex items-center justify-center text-xl font-bold mb-5 transition-transform duration-500 group-hover:rotate-6"><i class="fa-solid fa-clock"></i></div>
+          <h3 class="font-extrabold text-lg text-brand-navy dark:text-white mb-2">Flexible Timings</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Batches mapped from early mornings to late nights to fit office schedules or college lectures.</p>
+        </div>
+
       </div>
     </div>
-  </div>
-  <div class="testimonial-controls" id="tDots">
-    <div class="t-dot active" onclick="goToSlide(0)"></div>
-    <div class="t-dot" onclick="goToSlide(1)"></div>
-    <div class="t-dot" onclick="goToSlide(2)"></div>
-    <div class="t-dot" onclick="goToSlide(3)"></div>
-    <div class="t-dot" onclick="goToSlide(4)"></div>
-  </div>
-</section>
+  </section>
 
-<!-- STATS -->
-<div class="stats-section">
-  <div class="stats-grid">
-    <div class="stat-item"><strong class="stat-num" data-target="1000">0</strong><span>Students Trained</span></div>
-    <div class="stat-item"><strong class="stat-num" data-target="95">0</strong><span>% Satisfaction Rate</span></div>
-    <div class="stat-item"><strong class="stat-num" data-target="500">0</strong><span>Successful Placements</span></div>
-    <div class="stat-item"><strong class="stat-num" data-target="5">0</strong><span>Years of Excellence</span></div>
-  </div>
-</div>
+  <!-- ==================== OUR COURSES SECTION ==================== -->
+  <section id="courses" class="py-24 bg-slate-50 dark:bg-dark-card/25 border-y border-slate-200/50 dark:border-dark-border/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+        <span class="inline-block px-4 py-1.5 bg-soft-blue/10 dark:bg-soft-blue/5 border border-soft-blue/20 dark:border-dark-border text-soft-blue dark:text-sky-blue text-xs font-bold rounded-full uppercase tracking-wider mb-3">Our Courses</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-brand-navy dark:text-white tracking-tight mb-4">Find the Right Course for You</h2>
+        <p class="text-base sm:text-lg text-slate-500 dark:text-dark-muted leading-relaxed">Practical, results-oriented programs designed to advance you from hesitant speaking to complete fluency in weeks.</p>
+      </div>
 
-<!-- ONLINE/OFFLINE -->
-<section id="classes">
-  <div class="text-center reveal">
-    <div class="section-tag">Flexible Learning</div>
-    <h2 class="section-title">Learn Your Way</h2>
-    <p class="section-sub">Whether you prefer the energy of a classroom or the comfort of your home, we've got you covered.</p>
-  </div>
-  <div class="mode-grid">
-    <div class="mode-card online reveal">
-      <div class="mode-icon">💻</div>
-      <h3>Online Classes</h3>
-      <ul class="mode-list">
-        <li><span>→</span> Live sessions via Google Meet</li>
-        <li><span>→</span> Recorded sessions for revision</li>
-        <li><span>→</span> Attend from anywhere in India</li>
-        <li><span>→</span> Flexible morning & evening slots</li>
-        <li><span>→</span> Digital study materials</li>
-        <li><span>→</span> WhatsApp doubt support</li>
-      </ul>
-    </div>
-    <div class="mode-card offline reveal">
-      <div class="mode-icon">🏫</div>
-      <h3>Offline Classes</h3>
-      <ul class="mode-list">
-        <li><span>→</span> Classroom training environment</li>
-        <li><span>→</span> Group discussion activities</li>
-        <li><span>→</span> Personal face-to-face guidance</li>
-        <li><span>→</span> Role plays and presentations</li>
-        <li><span>→</span> Networking with peers</li>
-        <li><span>→</span> Certificate ceremony on completion</li>
-      </ul>
-    </div>
-  </div>
-</section>
+      <!-- Course Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Course 1 -->
+        <div class="flex flex-col bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 reveal">
+          <div class="h-3.5 bg-soft-blue"></div>
+          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 bg-soft-blue/10 text-soft-blue rounded-2xl flex items-center justify-center text-3xl mb-6"><i class="fa-solid fa-comments"></i></div>
+              <h3 class="text-xl sm:text-2xl font-black text-brand-navy dark:text-white mb-3">Spoken English</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed mb-6">From absolute beginner level to confident speaker through interactive daily practice.</p>
+              
+              <!-- Features List -->
+              <ul class="space-y-3.5 border-t border-slate-100 dark:border-dark-border/50 pt-5 mb-8">
+                <li class="flex items-center gap-3 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-circle-check text-emerald-500"></i> Beginner to Advanced Track</li>
+                <li class="flex items-center gap-3 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-circle-check text-emerald-500"></i> Daily Speaking Practice</li>
+                <li class="flex items-center gap-3 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-circle-check text-emerald-500"></i> Vocabulary Expansion</li>
+                <li class="flex items-center gap-3 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-circle-check text-emerald-500"></i> Active Fluency Development</li>
+              </ul>
+            </div>
+            <button onclick="selectCourseAndScroll('Spoken English Course')" class="w-full text-center py-3 bg-soft-blue text-white hover:bg-blue-600 font-bold rounded-xl shadow-md transition-colors">
+              Learn More &nbsp; <i class="fa-solid fa-angle-right text-xs"></i>
+            </button>
+          </div>
+        </div>
 
-<!-- INSTRUCTORS -->
-<section class="instructors-section" id="instructors">
-  <div class="text-center reveal">
-    <div class="section-tag">Expert Trainers</div>
-    <h2 class="section-title">Learn from the Best</h2>
-    <p class="section-sub">Our certified trainers bring years of real-world experience in communication coaching.</p>
-  </div>
-  <div class="instructors-grid">
-    <div class="instructor-card reveal">
-      <div class="instructor-avatar" style="background:linear-gradient(135deg,#EEF5FF,#E8EEFF)">👨‍🏫</div>
-      <div class="instructor-body">
-        <h4>Rohan Sharma</h4>
-        <div class="title">Head of Spoken English</div>
-        <p>8+ years of experience training 500+ students in spoken English and public speaking.</p>
-        <div class="instructor-tags"><span>Spoken English</span><span>Public Speaking</span><span>IELTS</span></div>
+        <!-- Course 2 -->
+        <div class="flex flex-col bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 reveal" style="transition-delay: 50ms;">
+          <div class="h-3.5 bg-soft-purple"></div>
+          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 bg-soft-purple/10 text-soft-purple rounded-2xl flex items-center justify-center text-3xl mb-6"><i class="fa-solid fa-bullhorn"></i></div>
+              <h3 class="text-xl sm:text-2xl font-black text-brand-navy dark:text-white mb-3">Communication</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed mb-6">Master professional communication tactics for modern workplaces and corporate environments.</p>
+              
+              <!-- Features List -->
+              <ul class="space-y-3.5 border-t border-slate-100 dark:border-dark-border/50 pt-5 mb-8">
+                <li class="flex items-center gap-3 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-circle-check text-emerald-500"></i> Professional Communication</li>
+                <li class="flex items-center gap-3 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-circle-check text-emerald-500"></i> Confidence Infrastructure</li>
+                <li class="flex items-center gap-3 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-circle-check text-emerald-500"></i> Presentation Masterclass</li>
+                <li class="flex items-center gap-3 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-circle-check text-emerald-500"></i> Corporate Workplace Writing</li>
+              </ul>
+            </div>
+            <button onclick="selectCourseAndScroll('Communication Skills')" class="w-full text-center py-3 bg-soft-purple text-white hover:bg-[#b09bff] font-bold rounded-xl shadow-md transition-colors">
+              Learn More &nbsp; <i class="fa-solid fa-angle-right text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="flex flex-col bg-white dark:bg-dark-card border border-slate-200/80 dark:border-dark-border/80 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 reveal" style="transition-delay: 100ms;">
+          <div class="h-3.5 bg-coral-accent"></div>
+          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 bg-coral-accent/10 text-coral-accent rounded-2xl flex items-center justify-center text-3xl mb-6"><i class="fa-solid fa-id-badge"></i></div>
+              <h3 class="text-xl sm:text-2xl font-black text-brand-navy dark:text-white mb-3">Interview Prep</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed mb-6">Crack interview stages with tailored mock rounds, resume builder, and grooming lessons.</p>
+              
+              <!-- Features List -->
+              <ul class="space-y-3.5 border-t border-slate-100 dark:border-dark-border/50 pt-5 mb-8">
+                <li class="flex items-center gap-3 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-circle-check text-emerald-500"></i> HR Interview Strategies</li>
+                <li class="flex items-center gap-3 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-circle-check text-emerald-500"></i> Live Mock Interview Drills</li>
+                <li class="flex items-center gap-3 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-circle-check text-emerald-500"></i> Resume Structuring Support</li>
+                <li class="flex items-center gap-3 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-circle-check text-emerald-500"></i> Professional Grooming Guides</li>
+              </ul>
+            </div>
+            <button onclick="selectCourseAndScroll('Interview Preparation')" class="w-full text-center py-3 bg-coral-accent text-white hover:bg-[#ff6161] font-bold rounded-xl shadow-md transition-colors">
+              Learn More &nbsp; <i class="fa-solid fa-angle-right text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="flex flex-col bg-white dark:bg-dark-card border border-slate-200/80 dark:border-dark-border/80 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 reveal" style="transition-delay: 150ms;">
+          <div class="h-3.5 bg-brand-green"></div>
+          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 bg-brand-green/10 text-brand-green rounded-2xl flex items-center justify-center text-3xl mb-6"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <h3 class="text-xl sm:text-2xl font-black text-brand-navy dark:text-white mb-3">Personality Dev.</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed mb-6">Build a powerful, elegant persona with advanced leadership mindset and styling metrics.</p>
+              
+              <!-- Features List -->
+              <ul class="space-y-3.5 border-t border-slate-100 dark:border-dark-border/50 pt-5 mb-8">
+                <li class="flex items-center gap-3 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-circle-check text-emerald-500"></i> Self-Confidence Blueprint</li>
+                <li class="flex items-center gap-3 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-circle-check text-emerald-500"></i> Body Language & Posture</li>
+                <li class="flex items-center gap-3 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-circle-check text-emerald-500"></i> Leadership Communication</li>
+                <li class="flex items-center gap-3 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-circle-check text-emerald-500"></i> Personal Branding Rules</li>
+              </ul>
+            </div>
+            <button onclick="selectCourseAndScroll('Personality Development')" class="w-full text-center py-3 bg-brand-green text-white hover:bg-[#64a639] font-bold rounded-xl shadow-md transition-colors">
+              Learn More &nbsp; <i class="fa-solid fa-angle-right text-xs"></i>
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
-    <div class="instructor-card reveal">
-      <div class="instructor-avatar" style="background:linear-gradient(135deg,#F0EEFF,#FEECFF)">👩‍🏫</div>
-      <div class="instructor-body">
-        <h4>Priyanka Nair</h4>
-        <div class="title">Communication Skills Coach</div>
-        <p>Former corporate trainer with expertise in workplace communication and leadership development.</p>
-        <div class="instructor-tags"><span>Corporate Comm.</span><span>Leadership</span></div>
-      </div>
-    </div>
-    <div class="instructor-card reveal">
-      <div class="instructor-avatar" style="background:linear-gradient(135deg,#F0FFF8,#ECFDF5)">👨‍💼</div>
-      <div class="instructor-body">
-        <h4>Amit Gupta</h4>
-        <div class="title">Interview Prep Specialist</div>
-        <p>HR professional with 6+ years helping freshers and professionals crack top company interviews.</p>
-        <div class="instructor-tags"><span>HR Interviews</span><span>Resume</span><span>Grooming</span></div>
-      </div>
-    </div>
-    <div class="instructor-card reveal">
-      <div class="instructor-avatar" style="background:linear-gradient(135deg,#FFF5F5,#FEF2F2)">👩‍💼</div>
-      <div class="instructor-body">
-        <h4>Divya Mehra</h4>
-        <div class="title">Personality Dev. Trainer</div>
-        <p>Certified life coach specializing in confidence building, body language, and personal branding.</p>
-        <div class="instructor-tags"><span>Confidence</span><span>Body Language</span></div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- FAQ -->
-<section class="faq-section" id="faq">
-  <div class="text-center reveal">
-    <div class="section-tag">FAQ</div>
-    <h2 class="section-title">Got Questions? We've Got Answers.</h2>
-    <p class="section-sub">Everything you need to know before joining Fuzion Academy.</p>
-  </div>
-  <div class="faq-list reveal">
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Can complete beginners join Fuzion Academy? <span class="faq-icon">+</span></button>
-      <div class="faq-a"><div class="faq-a-inner">Absolutely! Our Spoken English course starts from scratch. We assess your current level and place you in the right batch, so you'll always learn at the right pace.</div></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Are online classes available? <span class="faq-icon">+</span></button>
-      <div class="faq-a"><div class="faq-a-inner">Yes! We offer fully live online classes via Google Meet with the same quality as our offline sessions. Classes are also recorded for your convenience.</div></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Do you provide certificates after completion? <span class="faq-icon">+</span></button>
-      <div class="faq-a"><div class="faq-a-inner">Yes, every student who completes the course receives a certificate from Fuzion Academy, recognized by employers and institutions across India.</div></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">What are the class timings? <span class="faq-icon">+</span></button>
-      <div class="faq-a"><div class="faq-a-inner">We offer morning (6–9 AM), afternoon (12–3 PM), evening (5–8 PM), and weekend batches. You can choose any slot that fits your schedule during enrollment.</div></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Is there a free demo class before joining? <span class="faq-icon">+</span></button>
-      <div class="faq-a"><div class="faq-a-inner">Yes! We offer a completely free demo class with no obligations. Experience our teaching style, meet your trainer, and then decide. Book yours by clicking "Book Free Demo Class."</div></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Do you help with job interview preparation? <span class="faq-icon">+</span></button>
-      <div class="faq-a"><div class="faq-a-inner">Yes! Our Interview Preparation program includes mock interviews, common HR questions, resume review, and professional grooming sessions to help you crack any interview with confidence.</div></div>
-    </div>
-  </div>
-</section>
+  <!-- ==================== LEARNING PROCESS SECTION ==================== -->
+  <section id="process" class="py-24 bg-white dark:bg-dark-bg relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+        <span class="inline-block px-4 py-1.5 bg-soft-blue/10 dark:bg-soft-blue/5 border border-soft-blue/20 dark:border-dark-border text-soft-blue dark:text-sky-blue text-xs font-bold rounded-full uppercase tracking-wider mb-3">Our Process</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-brand-navy dark:text-white tracking-tight mb-4">Your Journey to Fluent English</h2>
+        <p class="text-base sm:text-lg text-slate-500 dark:text-dark-muted leading-relaxed">A clean, transparent, and step-by-step roadmap designed to guide you from basic speaking up to total workplace confidence.</p>
+      </div>
 
-<!-- CONTACT -->
-<section class="contact-section" id="contact">
-  <div class="contact-grid">
-    <div class="contact-info reveal">
-      <div class="section-tag">Get In Touch</div>
-      <h2 class="section-title">Start Your Journey Today</h2>
-      <p>Book your free demo class or reach out to us directly. We're here to help you take that first step toward confident communication.</p>
-      <div class="contact-chips">
-        <a href="https://wa.me/919999999999" class="contact-chip" target="_blank">
-          <div class="contact-chip-icon" style="background:#F0FFF8;font-size:1.4rem">💬</div>
-          <div><div style="font-weight:700">WhatsApp Us</div><div style="font-weight:400;color:var(--muted);font-size:.8rem">+91 99999 99999</div></div>
-        </a>
-        <a href="tel:+919999999999" class="contact-chip">
-          <div class="contact-chip-icon" style="background:#EEF5FF;font-size:1.4rem">📞</div>
-          <div><div style="font-weight:700">Call Us</div><div style="font-weight:400;color:var(--muted);font-size:.8rem">+91 99999 99999</div></div>
-        </a>
-        <a href="mailto:hello@fuzionacademy.com" class="contact-chip">
-          <div class="contact-chip-icon" style="background:#F0EEFF;font-size:1.4rem">✉️</div>
-          <div><div style="font-weight:700">Email Us</div><div style="font-weight:400;color:var(--muted);font-size:.8rem">hello@fuzionacademy.com</div></div>
-        </a>
-        <div class="contact-chip" style="cursor:default">
-          <div class="contact-chip-icon" style="background:#FFFAEE;font-size:1.4rem">📍</div>
-          <div><div style="font-weight:700">Visit Us</div><div style="font-weight:400;color:var(--muted);font-size:.8rem">Ghaziabad, Uttar Pradesh</div></div>
+      <!-- Timeline Steps -->
+      <div class="relative">
+        <!-- Connecting Line -->
+        <div class="hidden lg:block absolute top-[68px] left-[5%] right-[5%] h-1 bg-slate-200 dark:bg-dark-border">
+          <div id="timelineProgress" class="h-full bg-gradient-to-r from-soft-blue via-soft-purple to-brand-green w-0 transition-all duration-500"></div>
+        </div>
+        <div class="lg:hidden absolute left-[29px] top-6 bottom-6 w-1 bg-slate-200 dark:bg-dark-border"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-6 gap-10 lg:gap-6 relative">
+          <!-- Step 1 -->
+          <div class="flex lg:flex-col items-start lg:items-center gap-6 lg:gap-4 text-left lg:text-center group reveal">
+            <div class="z-10 w-14 h-14 rounded-full bg-white dark:bg-dark-card border-4 border-soft-blue dark:border-sky-blue flex items-center justify-center font-heading font-black text-lg text-soft-blue dark:text-sky-blue transition-transform duration-300 group-hover:scale-110 shadow-md">
+              1
+            </div>
+            <div class="lg:mt-4">
+              <span class="text-2xl lg:block mb-1.5">🎁</span>
+              <h3 class="font-extrabold text-base text-brand-navy dark:text-white mb-2">Free Demo Class</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Attend a free interactive trial class to understand our modern methodologies.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flex lg:flex-col items-start lg:items-center gap-6 lg:gap-4 text-left lg:text-center group reveal" style="transition-delay: 50ms;">
+            <div class="z-10 w-14 h-14 rounded-full bg-white dark:bg-dark-card border-4 border-soft-purple flex items-center justify-center font-heading font-black text-lg text-soft-purple transition-transform duration-300 group-hover:scale-110 shadow-md">
+              2
+            </div>
+            <div class="lg:mt-4">
+              <span class="text-2xl lg:block mb-1.5">🔍</span>
+              <h3 class="font-extrabold text-base text-brand-navy dark:text-white mb-2">Assessment</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Participate in a 1-on-1 speaking evaluation to map out your exact weak spots.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="flex lg:flex-col items-start lg:items-center gap-6 lg:gap-4 text-left lg:text-center group reveal" style="transition-delay: 100ms;">
+            <div class="z-10 w-14 h-14 rounded-full bg-white dark:bg-dark-card border-4 border-coral-accent flex items-center justify-center font-heading font-black text-lg text-coral-accent transition-transform duration-300 group-hover:scale-110 shadow-md">
+              3
+            </div>
+            <div class="lg:mt-4">
+              <span class="text-2xl lg:block mb-1.5">📋</span>
+              <h3 class="font-extrabold text-base text-brand-navy dark:text-white mb-2">Enroll in Course</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Lock in your slot, choose your preferred timing, and join your cohort.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="flex lg:flex-col items-start lg:items-center gap-6 lg:gap-4 text-left lg:text-center group reveal" style="transition-delay: 150ms;">
+            <div class="z-10 w-14 h-14 rounded-full bg-white dark:bg-dark-card border-4 border-yellow-accent flex items-center justify-center font-heading font-black text-lg text-yellow-500 dark:text-yellow-accent transition-transform duration-300 group-hover:scale-110 shadow-md">
+              4
+            </div>
+            <div class="lg:mt-4">
+              <span class="text-2xl lg:block mb-1.5">🗓️</span>
+              <h3 class="font-extrabold text-base text-brand-navy dark:text-white mb-2">Daily Practice</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Engage in consistent daily live practice to construct language templates.</p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="flex lg:flex-col items-start lg:items-center gap-6 lg:gap-4 text-left lg:text-center group reveal" style="transition-delay: 200ms;">
+            <div class="z-10 w-14 h-14 rounded-full bg-white dark:bg-dark-card border-4 border-brand-green flex items-center justify-center font-heading font-black text-lg text-brand-green transition-transform duration-300 group-hover:scale-110 shadow-md">
+              5
+            </div>
+            <div class="lg:mt-4">
+              <span class="text-2xl lg:block mb-1.5">💪</span>
+              <h3 class="font-extrabold text-base text-brand-navy dark:text-white mb-2">Confidence Tasks</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Execute live debates, presentations, and mock round tables to build confidence.</p>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="flex lg:flex-col items-start lg:items-center gap-6 lg:gap-4 text-left lg:text-center group reveal" style="transition-delay: 250ms;">
+            <div class="z-10 w-14 h-14 rounded-full bg-white dark:bg-dark-card border-4 border-emerald-500 flex items-center justify-center font-heading font-black text-lg text-emerald-500 transition-transform duration-300 group-hover:scale-110 shadow-md">
+              6
+            </div>
+            <div class="lg:mt-4">
+              <span class="text-2xl lg:block mb-1.5">🏆</span>
+              <h3 class="font-extrabold text-base text-brand-navy dark:text-white mb-2">Fluent Speaker</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Earn your certification and unlock massive job & personal opportunities.</p>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
-    <div class="contact-form reveal">
-      <h3 style="font-family:'Outfit';font-size:1.4rem;font-weight:800;color:var(--dark);margin-bottom:1.5rem">Book Your Free Demo Class</h3>
-      <div class="form-row">
-        <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your full name"></div>
-        <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 00000 00000"></div>
+  </section>
+
+  <!-- ==================== MEET OUR FOUNDER & HEAD COACH (Aesthetic Grid) ==================== -->
+  <section id="founder" class="py-24 bg-slate-50 dark:bg-dark-card/25 border-y border-slate-200/50 dark:border-dark-border/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+        <span class="inline-block px-4 py-1.5 bg-soft-blue/10 dark:bg-soft-blue/5 border border-soft-blue/20 dark:border-dark-border text-soft-blue dark:text-sky-blue text-xs font-bold rounded-full uppercase tracking-wider mb-3">Our Chief Mentor</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-brand-navy dark:text-white tracking-tight mb-4">Meet Our Founder &amp; Head Coach</h2>
+        <p class="text-base sm:text-lg text-slate-500 dark:text-dark-muted leading-relaxed">Coach Saurabh Pandey guides Fuzion Academy learners through custom interactive modules. Click on any profile avatar to explore certifications, background bio, and mock schedules.</p>
       </div>
-      <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com"></div>
-      <div class="form-group">
-        <label>Course Interest</label>
-        <select>
-          <option value="">Select a course</option>
-          <option>Spoken English Course</option>
-          <option>Communication Skills</option>
-          <option>Interview Preparation</option>
-          <option>Personality Development</option>
-          <option>All Courses</option>
-        </select>
+
+      <!-- Coach 5 Avatars Grid (Aesthetic & Eye catching cards) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 reveal">
+        
+        <!-- Card 1: Personality Development Mentor -->
+        <div class="group bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer" onclick="openBioModal(0)">
+          <div class="aspect-[3/4] w-full overflow-hidden bg-slate-100 relative">
+            <img src="Untitled design/1.png" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" alt="Confidence Building Coach">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent flex items-end p-4">
+              <span class="text-[10px] font-bold text-yellow-accent uppercase tracking-widest bg-black/40 px-2 py-0.5 rounded">Mindset &amp; Styling</span>
+            </div>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-extrabold text-brand-navy dark:text-white text-sm group-hover:text-soft-blue dark:group-hover:text-sky-blue transition-colors">Personality Development</h4>
+            <p class="text-[11px] text-slate-500 dark:text-dark-muted mt-1 font-medium">Confidence &amp; Body Language</p>
+          </div>
+        </div>
+
+        <!-- Card 2: Corporate Communication Coach -->
+        <div class="group bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer" onclick="openBioModal(1)">
+          <div class="aspect-[3/4] w-full overflow-hidden bg-slate-100 relative">
+            <img src="Untitled design/4.png" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" alt="Corporate Communication Mentor">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent flex items-end p-4">
+              <span class="text-[10px] font-bold text-yellow-accent uppercase tracking-widest bg-black/40 px-2 py-0.5 rounded">Corporate Standard</span>
+            </div>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-extrabold text-brand-navy dark:text-white text-sm group-hover:text-soft-blue dark:group-hover:text-sky-blue transition-colors">Communication Skills</h4>
+            <p class="text-[11px] text-slate-500 dark:text-dark-muted mt-1 font-medium">Workplace Presenting &amp; Pitching</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Executive HR Interview Specialist -->
+        <div class="group bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer" onclick="openBioModal(2)">
+          <div class="aspect-[3/4] w-full overflow-hidden bg-slate-100 relative">
+            <img src="Untitled design/3.png" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" alt="Interview Cracker Coach">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent flex items-end p-4">
+              <span class="text-[10px] font-bold text-yellow-accent uppercase tracking-widest bg-black/40 px-2 py-0.5 rounded">Career Launch</span>
+            </div>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-extrabold text-brand-navy dark:text-white text-sm group-hover:text-soft-blue dark:group-hover:text-sky-blue transition-colors">Interview Preparation</h4>
+            <p class="text-[11px] text-slate-500 dark:text-dark-muted mt-1 font-medium">Mock HR Rounds &amp; CV Drafting</p>
+          </div>
+        </div>
+
+        <!-- Card 4: Spoken English Mentor -->
+        <div class="group bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer" onclick="openBioModal(3)">
+          <div class="aspect-[3/4] w-full overflow-hidden bg-slate-100 relative">
+            <img src="Untitled design/2.png" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" alt="Active Spoken English Coach">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent flex items-end p-4">
+              <span class="text-[10px] font-bold text-yellow-accent uppercase tracking-widest bg-black/40 px-2 py-0.5 rounded">Active Fluency</span>
+            </div>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-extrabold text-brand-navy dark:text-white text-sm group-hover:text-soft-blue dark:group-hover:text-sky-blue transition-colors">Spoken English</h4>
+            <p class="text-[11px] text-slate-500 dark:text-dark-muted mt-1 font-medium">Daily Practice &amp; Vocab drills</p>
+          </div>
+        </div>
+
+        <!-- Card 5: Public Speaking Master -->
+        <div class="group bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer" onclick="openBioModal(4)">
+          <div class="aspect-[3/4] w-full overflow-hidden bg-slate-100 relative">
+            <img src="Untitled design/5.png" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" alt="Public speaking expert">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent flex items-end p-4">
+              <span class="text-[10px] font-bold text-yellow-accent uppercase tracking-widest bg-black/40 px-2 py-0.5 rounded">Stage Presence</span>
+            </div>
+          </div>
+          <div class="p-4 text-left">
+            <h4 class="font-extrabold text-brand-navy dark:text-white text-sm group-hover:text-soft-blue dark:group-hover:text-sky-blue transition-colors">Public Speaking</h4>
+            <p class="text-[11px] text-slate-500 dark:text-dark-muted mt-1 font-medium">Stage Fear Removal &amp; Speeches</p>
+          </div>
+        </div>
+
       </div>
-      <div class="form-group"><label>Message (Optional)</label><textarea placeholder="Tell us about your goals..."></textarea></div>
-      <div class="form-btns">
-        <button class="btn-primary" onclick="handleSubmit()" style="flex:1">🎯 Book Free Demo Class</button>
-        <a href="https://wa.me/919999999999" class="btn-secondary" style="display:flex;align-items:center;gap:.5rem">💬 WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Coach Biography Modal Popup -->
+  <div id="bioModal" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden items-center justify-center p-4 select-none transition-opacity duration-300">
+    <div class="relative w-full max-w-2xl bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+      <!-- Close button -->
+      <button id="closeBioModal" class="absolute top-4 right-4 z-50 w-10 h-10 rounded-full bg-slate-900/50 hover:bg-slate-950 text-white flex items-center justify-center border border-white/10 transition-colors" aria-label="Close bio modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Left Column: Coach Photo -->
+      <div class="w-full md:w-1/2 aspect-square md:aspect-auto md:h-full bg-slate-100 overflow-hidden relative">
+        <img id="bioModalImg" src="Untitled design/1.png" class="w-full h-full object-cover object-top" alt="Trainer Profile Image">
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent p-6 pt-16">
+          <span class="px-2 py-0.5 bg-soft-blue text-white text-[10px] font-bold rounded uppercase tracking-wider">Lead Coach</span>
+          <h4 class="font-black text-white text-lg mt-1.5">Coach Saurabh Pandey</h4>
+        </div>
+      </div>
+
+      <!-- Right Column: Biography Content -->
+      <div class="w-full md:w-1/2 p-6 sm:p-8 flex flex-col justify-between text-left">
+        <div>
+          <span id="bioRoleTag" class="inline-block text-xs font-bold text-soft-blue uppercase tracking-widest mb-1.5">Personality Development</span>
+          <h3 id="bioModalTitle" class="text-xl sm:text-2xl font-black text-brand-navy dark:text-white leading-tight mb-4">Mindset &amp; Body Language Mentor</h3>
+          
+          <div class="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-dark-muted leading-relaxed">
+            <p id="bioModalDesc">"Personality is not just how you dress, it's how you enter a room, carry yourself, and influence people. My coaching is designed to help you construct a highly positive body language and high self-esteem."</p>
+            
+            <div class="border-t border-slate-100 dark:border-dark-border/60 pt-4 space-y-2">
+              <div><strong class="text-brand-navy dark:text-white">Experience:</strong> 7+ Years coaching corporate executives &amp; candidates.</div>
+              <div><strong class="text-brand-navy dark:text-white">Credentials:</strong> Certified Speech Consultant &amp; Interview Strategist.</div>
+              <div><strong class="text-brand-navy dark:text-white">Batches:</strong> Direct 1-on-1 and Interactive cohort batches.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6 mt-6 border-t border-slate-100 dark:border-dark-border/60 flex items-center gap-3">
+          <button onclick="bookSessionWithCoach()" class="flex-1 py-3 bg-soft-blue hover:bg-blue-600 text-white text-xs sm:text-sm font-extrabold rounded-xl shadow-md transition-colors text-center">
+            📅 Book Session
+          </button>
+          <a href="https://wa.me/919582774387" target="_blank" class="px-4 py-3 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl shadow-md transition-colors flex items-center justify-center">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+          </a>
+        </div>
       </div>
     </div>
   </div>
-</section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="logo">Fuzion<span>.</span>Academy</div>
-      <p>Transforming communication skills, building confident professionals, one student at a time.</p>
-      <div class="social-row">
-        <a href="#" class="social-btn">📘</a>
-        <a href="#" class="social-btn">📸</a>
-        <a href="#" class="social-btn">▶️</a>
-        <a href="#" class="social-btn">💼</a>
+  <!-- ==================== STUDENT SUCCESS STORIES (LIGHT THEME) ==================== -->
+  <section id="testimonials" class="py-24 bg-[#FFFDF8] dark:bg-dark-card/20 text-slate-800 dark:text-dark-text border-y border-slate-200/50 dark:border-dark-border/30 relative overflow-hidden">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+        <span class="inline-block px-4 py-1.5 bg-soft-blue/10 dark:bg-soft-blue/5 border border-soft-blue/20 dark:border-dark-border text-soft-blue dark:text-sky-blue text-xs font-bold rounded-full uppercase tracking-wider mb-3">Student Reviews</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-brand-navy dark:text-white tracking-tight mb-4">Real Transformations. Real Reviews.</h2>
+        <p class="text-base sm:text-lg text-slate-500 dark:text-dark-muted leading-relaxed">Over 1,000 students have successfully transformed their language barrier with Fuzion Academy. Here is what they say.</p>
       </div>
-    </div>
-    <div class="footer-col">
-      <h5>Quick Links</h5>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#why">Why Choose Us</a></li>
-        <li><a href="#courses">Our Courses</a></li>
-        <li><a href="#process">How It Works</a></li>
-        <li><a href="#testimonials">Student Reviews</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h5>Courses</h5>
-      <ul>
-        <li><a href="#courses">Spoken English</a></li>
-        <li><a href="#courses">Communication Skills</a></li>
-        <li><a href="#courses">Interview Preparation</a></li>
-        <li><a href="#courses">Personality Development</a></li>
-        <li><a href="#courses">Public Speaking</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h5>Stay Updated</h5>
-      <p style="font-size:.85rem;color:rgba(255,255,255,0.5);line-height:1.6;margin-bottom:.5rem">Get tips, free resources, and batch updates in your inbox.</p>
-      <div class="newsletter-form">
-        <input type="email" placeholder="Enter your email">
-        <button>Subscribe</button>
+
+      <!-- Testimonial Slider Wrapper -->
+      <div class="relative w-full overflow-hidden reveal">
+        <!-- Track container -->
+        <div id="testimonialTrack" class="flex gap-6 transition-transform duration-500 ease-out" style="transform: translateX(0px);">
+          
+          <!-- Testimonial Card 1 -->
+          <div class="min-w-[280px] sm:min-w-[350px] md:min-w-[400px] flex-1 bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-3xl p-6 sm:p-8 shadow-md relative flex flex-col justify-between">
+            <div>
+              <div class="text-amber-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-dark-muted leading-relaxed italic mb-6">"I joined Fuzion Academy as a complete beginner. Within 3 months I was confidently giving presentations at my office. The daily practice sessions made all the difference!"</p>
+            </div>
+            <div class="flex items-center gap-4 mt-auto">
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-soft-blue to-soft-purple flex items-center justify-center font-bold text-white text-sm">AM</div>
+              <div>
+                <h4 class="font-bold text-xs sm:text-sm text-brand-navy dark:text-white">Aarav Mehta</h4>
+                <p class="text-[10px] sm:text-xs text-slate-500 dark:text-dark-muted">Spoken English Course</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 2 -->
+          <div class="min-w-[280px] sm:min-w-[350px] md:min-w-[400px] flex-1 bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-3xl p-6 sm:p-8 shadow-md relative flex flex-col justify-between">
+            <div>
+              <div class="text-amber-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-dark-muted leading-relaxed italic mb-6">"The interview preparation module is absolutely top-notch. I cracked my dream company's HR round in the first attempt after practicing mock interviews here!"</p>
+            </div>
+            <div class="flex items-center gap-4 mt-auto">
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-coral-accent to-yellow-accent flex items-center justify-center font-bold text-white text-sm">SK</div>
+              <div>
+                <h4 class="font-bold text-xs sm:text-sm text-brand-navy dark:text-white">Sneha Kapoor</h4>
+                <p class="text-[10px] sm:text-xs text-slate-500 dark:text-dark-muted">Interview Preparation</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 3 -->
+          <div class="min-w-[280px] sm:min-w-[350px] md:min-w-[400px] flex-1 bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-3xl p-6 sm:p-8 shadow-md relative flex flex-col justify-between">
+            <div>
+              <div class="text-amber-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-dark-muted leading-relaxed italic mb-6">"My confidence went from 0 to 100 in just 2 months. The personality development classes changed how I carry myself in meetings and social situations."</p>
+            </div>
+            <div class="flex items-center gap-4 mt-auto">
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-mint-green to-soft-blue flex items-center justify-center font-bold text-white text-sm">RV</div>
+              <div>
+                <h4 class="font-bold text-xs sm:text-sm text-brand-navy dark:text-white">Rahul Verma</h4>
+                <p class="text-[10px] sm:text-xs text-slate-500 dark:text-dark-muted">Personality Development</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 4 -->
+          <div class="min-w-[280px] sm:min-w-[350px] md:min-w-[400px] flex-1 bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-3xl p-6 sm:p-8 shadow-md relative flex flex-col justify-between">
+            <div>
+              <div class="text-amber-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-dark-muted leading-relaxed italic mb-6">"Best decision of my career! The online classes are as effective as offline. The WhatsApp support from trainers is incredibly helpful for quick doubts."</p>
+            </div>
+            <div class="flex items-center gap-4 mt-auto">
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-soft-purple to-soft-blue flex items-center justify-center font-bold text-white text-sm">PS</div>
+              <div>
+                <h4 class="font-bold text-xs sm:text-sm text-brand-navy dark:text-white">Priya Singh</h4>
+                <p class="text-[10px] sm:text-xs text-slate-500 dark:text-dark-muted">Communication Skills</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 5 -->
+          <div class="min-w-[280px] sm:min-w-[350px] md:min-w-[400px] flex-1 bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-3xl p-6 sm:p-8 shadow-md relative flex flex-col justify-between">
+            <div>
+              <div class="text-amber-400 text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-dark-muted leading-relaxed italic mb-6">"I used to fear speaking in public. After 3 months at Fuzion Academy, I gave a speech at my college fest to 500 people! The trainers are truly exceptional."</p>
+            </div>
+            <div class="flex items-center gap-4 mt-auto">
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-yellow-accent to-coral-accent flex items-center justify-center font-bold text-white text-sm">KJ</div>
+              <div>
+                <h4 class="font-bold text-xs sm:text-sm text-brand-navy dark:text-white">Kartik Joshi</h4>
+                <p class="text-[10px] sm:text-xs text-slate-500 dark:text-dark-muted">Public Speaking</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <div style="margin-top:1.2rem">
-        <div style="font-size:.82rem;color:rgba(255,255,255,0.4)">📍 Ghaziabad, Uttar Pradesh</div>
-        <div style="font-size:.82rem;color:rgba(255,255,255,0.4);margin-top:.3rem">📞 +91 99999 99999</div>
+
+      <!-- Testimonial Slider Controls -->
+      <div class="flex items-center justify-center gap-2.5 mt-10">
+        <button id="prevBtn" class="w-10 h-10 rounded-full border border-slate-300 dark:border-dark-border hover:bg-slate-100 dark:hover:bg-dark-border flex items-center justify-center transition-colors" aria-label="Previous slide"><i class="fa-solid fa-chevron-left text-slate-700 dark:text-dark-text"></i></button>
+        <div id="testimonialDots" class="flex items-center gap-1.5"></div>
+        <button id="nextBtn" class="w-10 h-10 rounded-full border border-slate-300 dark:border-dark-border hover:bg-slate-100 dark:hover:bg-dark-border flex items-center justify-center transition-colors" aria-label="Next slide"><i class="fa-solid fa-chevron-right text-slate-700 dark:text-dark-text"></i></button>
+      </div>
+
+      <!-- Video Testimonial Trigger Callout Box -->
+      <div class="mt-20 bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border rounded-3xl p-8 max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 reveal shadow-lg">
+        <div class="flex items-center gap-4 text-left">
+          <div class="w-14 h-14 rounded-2xl bg-soft-blue/15 flex items-center justify-center text-soft-blue text-2xl animate-pulse"><i class="fa-solid fa-circle-play"></i></div>
+          <div>
+            <h3 class="font-bold text-lg text-brand-navy dark:text-white">Watch Student Video Transformation</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted">Hear directly from Priya Sharma on her spoken English journey.</p>
+          </div>
+        </div>
+        <button id="openVideoModal" class="px-6 py-3.5 bg-soft-blue hover:bg-blue-600 text-white font-bold rounded-2xl flex items-center gap-2 shadow-md hover:scale-105 transition-all duration-300">
+          <i class="fa-solid fa-play"></i> Watch Now
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Success Testimonial Video Modal -->
+  <div id="videoModal" class="fixed inset-0 z-50 bg-slate-900/90 flex items-center justify-center p-4 hidden transition-opacity duration-300">
+    <div class="relative w-full max-w-3xl bg-black rounded-3xl overflow-hidden border border-slate-700">
+      <button id="closeVideoModal" class="absolute top-4 right-4 z-50 w-10 h-10 rounded-full bg-black/50 hover:bg-black text-white flex items-center justify-center border border-white/10 transition-colors" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="aspect-video w-full flex items-center justify-center bg-slate-900">
+        <i class="fa-solid fa-circle-play text-7xl text-soft-blue/80 animate-pulse cursor-pointer"></i>
+      </div>
+      <div class="p-4 bg-slate-950 text-white flex items-center justify-between">
+        <div>
+          <h4 class="font-bold text-sm">Priya Sharma Success Case study</h4>
+          <p class="text-xs text-slate-400">Mastering Office Presentation Confidence</p>
+        </div>
+        <span class="text-xs px-2 py-1 bg-white/10 rounded-md">2:15 min</span>
       </div>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p>© 2025 Fuzion Academy. All rights reserved.</p>
-    <p>Made with ❤️ for every aspiring communicator</p>
+
+  <!-- ==================== STATISTICS COUNTERS SECTION ==================== -->
+  <section id="stats" class="py-16 bg-gradient-to-r from-soft-blue to-soft-purple text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        
+        <!-- Stat item 1 -->
+        <div class="reveal">
+          <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black font-heading tracking-tight mb-2" id="counter-students" data-target="1000">0</h3>
+          <p class="text-xs sm:text-sm font-semibold tracking-wider uppercase text-sky-blue">Students Trained</p>
+        </div>
+
+        <!-- Stat item 2 -->
+        <div class="reveal" style="transition-delay: 50ms;">
+          <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black font-heading tracking-tight mb-2" id="counter-satisfaction" data-target="95">0</h3>
+          <p class="text-xs sm:text-sm font-semibold tracking-wider uppercase text-sky-blue">Student Satisfaction</p>
+        </div>
+
+        <!-- Stat item 3 -->
+        <div class="reveal" style="transition-delay: 100ms;">
+          <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black font-heading tracking-tight mb-2" id="counter-placements" data-target="500">0</h3>
+          <p class="text-xs sm:text-sm font-semibold tracking-wider uppercase text-sky-blue">Placements cracked</p>
+        </div>
+
+        <!-- Stat item 4 -->
+        <div class="reveal" style="transition-delay: 150ms;">
+          <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black font-heading tracking-tight mb-2" id="counter-years" data-target="5">0</h3>
+          <p class="text-xs sm:text-sm font-semibold tracking-wider uppercase text-sky-blue">Years of Excellence</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ONLINE & OFFLINE CLASSES ==================== -->
+  <section id="modes" class="py-24 bg-white dark:bg-dark-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+        <span class="inline-block px-4 py-1.5 bg-soft-blue/10 dark:bg-soft-blue/5 border border-soft-blue/20 dark:border-dark-border text-soft-blue dark:text-sky-blue text-xs font-bold rounded-full uppercase tracking-wider mb-3">Flexible Modes</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-brand-navy dark:text-white tracking-tight mb-4">Learn Your Way. Anytime.</h2>
+        <p class="text-base sm:text-lg text-slate-500 dark:text-dark-muted leading-relaxed">Whether you prefer the dynamic environment of a local classroom or the luxury of home comfort, we provide it.</p>
+      </div>
+
+      <!-- Split Screen Modes Cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- Online Classes Card -->
+        <div class="group relative rounded-[32px] overflow-hidden bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border p-8 sm:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl reveal">
+          <div class="absolute -right-4 -bottom-4 w-40 h-40 bg-soft-blue/5 rounded-full blur-2xl group-hover:bg-soft-blue/10 transition-colors"></div>
+          <div class="w-14 h-14 bg-soft-blue/10 text-soft-blue rounded-2xl flex items-center justify-center text-3xl mb-6"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3 class="text-2xl sm:text-3xl font-black text-brand-navy dark:text-white mb-4">Online Classes</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed mb-6">Enjoy structured virtual learning with high interaction levels.</p>
+          
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start gap-3.5 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-chevron-right text-soft-blue mt-1"></i> Live Sessions via Google Meet</li>
+            <li class="flex items-start gap-3.5 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-chevron-right text-soft-blue mt-1"></i> Recorded sessions accessible 24/7</li>
+            <li class="flex items-start gap-3.5 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-chevron-right text-soft-blue mt-1"></i> Morning and Evening flexible batches</li>
+            <li class="flex items-start gap-3.5 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-chevron-right text-soft-blue mt-1"></i> Premium digital handouts and worksheets</li>
+            <li class="flex items-start gap-3.5 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-chevron-right text-soft-blue mt-1"></i> Dynamic doubt clearance via WhatsApp</li>
+          </ul>
+          <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 bg-soft-blue hover:bg-blue-600 text-white font-bold rounded-xl transition-colors">Start Online Track</a>
+        </div>
+
+        <!-- Offline Classes Card -->
+        <div class="group relative rounded-[32px] overflow-hidden bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border p-8 sm:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl reveal" style="transition-delay: 50ms;">
+          <div class="absolute -right-4 -bottom-4 w-40 h-40 bg-brand-green/5 rounded-full blur-2xl group-hover:bg-brand-green/10 transition-colors"></div>
+          <div class="w-14 h-14 bg-brand-green/10 text-brand-green rounded-2xl flex items-center justify-center text-3xl mb-6"><i class="fa-solid fa-school-flag"></i></div>
+          <h3 class="text-2xl sm:text-3xl font-black text-brand-navy dark:text-white mb-4">Offline Classes</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed mb-6">Immerse yourself in active environment learning at our local center.</p>
+          
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start gap-3.5 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-chevron-right text-brand-green mt-1"></i> Classroom activities in Pratap Vihar Center</li>
+            <li class="flex items-start gap-3.5 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-chevron-right text-brand-green mt-1"></i> Regular group presentations and debates</li>
+            <li class="flex items-start gap-3.5 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-chevron-right text-brand-green mt-1"></i> Face-to-face feedback loops</li>
+            <li class="flex items-start gap-3.5 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-chevron-right text-brand-green mt-1"></i> Peer networking workshops</li>
+            <li class="flex items-start gap-3.5 text-xs sm:text-sm text-slate-700 dark:text-dark-text font-medium"><i class="fa-solid fa-chevron-right text-brand-green mt-1"></i> Certificates distribution ceremonies</li>
+          </ul>
+          <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 bg-brand-green hover:bg-green-600 text-white font-bold rounded-xl transition-colors">Visit Local Center</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY SECTION ==================== -->
+  <section id="gallery" class="py-24 bg-white dark:bg-dark-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+        <span class="inline-block px-4 py-1.5 bg-soft-blue/10 dark:bg-soft-blue/5 border border-soft-blue/20 dark:border-dark-border text-soft-blue dark:text-sky-blue text-xs font-bold rounded-full uppercase tracking-wider mb-3">Gallery</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-brand-navy dark:text-white tracking-tight mb-4">Our Learning Environment</h2>
+        <p class="text-base sm:text-lg text-slate-500 dark:text-dark-muted leading-relaxed">Glance at our classrooms, online meetups, student activities, workshops, and graduation celebrations.</p>
+      </div>
+
+      <!-- Masonry Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 reveal">
+        <!-- Class item 1 -->
+        <div class="relative overflow-hidden rounded-3xl group cursor-pointer border border-slate-200 dark:border-dark-border aspect-square sm:aspect-auto sm:h-[300px]">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Active Class Activity">
+          <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white text-3xl font-extrabold uppercase tracking-widest font-heading"><i class="fa-solid fa-expand-arrows-alt"></i></span>
+          </div>
+        </div>
+
+        <!-- Class item 2 -->
+        <div class="relative overflow-hidden rounded-3xl group cursor-pointer border border-slate-200 dark:border-dark-border aspect-square sm:aspect-auto sm:h-[400px]">
+          <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Interactive Online Sessions">
+          <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white text-3xl font-extrabold uppercase tracking-widest font-heading"><i class="fa-solid fa-expand-arrows-alt"></i></span>
+          </div>
+        </div>
+
+        <!-- Class item 3 -->
+        <div class="relative overflow-hidden rounded-3xl group cursor-pointer border border-slate-200 dark:border-dark-border aspect-square sm:aspect-auto sm:h-[300px]">
+          <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Public Speaking Training">
+          <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white text-3xl font-extrabold uppercase tracking-widest font-heading"><i class="fa-solid fa-expand-arrows-alt"></i></span>
+          </div>
+        </div>
+
+        <!-- Class item 4 -->
+        <div class="relative overflow-hidden rounded-3xl group cursor-pointer border border-slate-200 dark:border-dark-border aspect-square sm:aspect-auto sm:h-[400px]">
+          <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Group Discussions">
+          <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white text-3xl font-extrabold uppercase tracking-widest font-heading"><i class="fa-solid fa-expand-arrows-alt"></i></span>
+          </div>
+        </div>
+
+        <!-- Class item 5 -->
+        <div class="relative overflow-hidden rounded-3xl group cursor-pointer border border-slate-200 dark:border-dark-border aspect-square sm:aspect-auto sm:h-[300px]">
+          <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Certification Ceremony">
+          <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white text-3xl font-extrabold uppercase tracking-widest font-heading"><i class="fa-solid fa-expand-arrows-alt"></i></span>
+          </div>
+        </div>
+
+        <!-- Class item 6 -->
+        <div class="relative overflow-hidden rounded-3xl group cursor-pointer border border-slate-200 dark:border-dark-border aspect-square sm:aspect-auto sm:h-[300px]">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Interactive Workshops">
+          <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white text-3xl font-extrabold uppercase tracking-widest font-heading"><i class="fa-solid fa-expand-arrows-alt"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom JavaScript Lightbox Overlay -->
+  <div id="lightboxOverlay" class="fixed inset-0 z-50 bg-slate-950/95 flex flex-col items-center justify-center p-4 hidden select-none transition-opacity duration-300">
+    <button id="closeLightbox" class="absolute top-4 right-4 text-white text-3xl p-3 hover:text-soft-blue transition-colors" aria-label="Close lightbox"><i class="fa-solid fa-xmark"></i></button>
+    <button id="prevImg" class="absolute left-4 text-white text-3xl p-3 hover:text-soft-blue transition-colors" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+    <button id="nextImg" class="absolute right-4 text-white text-3xl p-3 hover:text-soft-blue transition-colors" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="max-w-4xl max-h-[80vh] w-full flex items-center justify-center rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+      <img id="lightboxImage" src="" class="max-w-full max-h-[75vh] object-contain transition-transform duration-300" alt="Full Image Display">
+    </div>
+    <p id="lightboxCaption" class="text-white font-heading font-semibold text-sm mt-4 text-center"></p>
   </div>
-</footer>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/919999999999" class="wa-btn" target="_blank" title="Chat on WhatsApp">💬</a>
+  <!-- ==================== FAQ ACCORDION SECTION ==================== -->
+  <section id="faq" class="py-24 bg-slate-50 dark:bg-dark-card/25 border-y border-slate-200/50 dark:border-dark-border/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+        <span class="inline-block px-4 py-1.5 bg-soft-blue/10 dark:bg-soft-blue/5 border border-soft-blue/20 dark:border-dark-border text-soft-blue dark:text-sky-blue text-xs font-bold rounded-full uppercase tracking-wider mb-3">FAQ</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-brand-navy dark:text-white tracking-tight mb-4">Frequently Asked Questions</h2>
+        <p class="text-base sm:text-lg text-slate-500 dark:text-dark-muted leading-relaxed">Find answers to the most common queries about Fuzion Academy programs.</p>
+      </div>
 
-<script>
-// NAV SCROLL
-window.addEventListener('scroll', () => {
-  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
-});
+      <!-- Accordion List -->
+      <div class="space-y-4 reveal">
+        
+        <!-- Accordion 1 -->
+        <div class="faq-item bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-2xl overflow-hidden">
+          <button class="w-full text-left px-6 py-5 flex items-center justify-between text-base sm:text-lg font-extrabold text-brand-navy dark:text-white transition-colors duration-300" onclick="toggleAccordion(this)">
+            Can complete beginners join Fuzion Academy?
+            <span class="faq-icon text-soft-blue font-light text-xl transition-transform duration-300"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="px-6 pb-5 text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed border-t border-slate-100 dark:border-dark-border/30 pt-4">
+              Yes, absolutely! We welcome learners of all levels. Our Spoken English course starts from the absolute basics, assessing your current confidence and fluency to place you in the perfect batch.
+            </div>
+          </div>
+        </div>
 
-// HAMBURGER
-document.getElementById('hamburger').addEventListener('click', () => {
-  document.getElementById('mobileMenu').classList.toggle('open');
-});
-document.querySelectorAll('.mobile-menu a').forEach(a => a.addEventListener('click', () => {
-  document.getElementById('mobileMenu').classList.remove('open');
-}));
+        <!-- Accordion 2 -->
+        <div class="faq-item bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-2xl overflow-hidden">
+          <button class="w-full text-left px-6 py-5 flex items-center justify-between text-base sm:text-lg font-extrabold text-brand-navy dark:text-white transition-colors duration-300" onclick="toggleAccordion(this)">
+            Are online classes available?
+            <span class="faq-icon text-soft-blue font-light text-xl transition-transform duration-300"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="px-6 pb-5 text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed border-t border-slate-100 dark:border-dark-border/30 pt-4">
+              Yes, we conduct live, highly interactive online sessions via Google Meet. You get real-time conversation practice, instant feedback, and access to all class recordings for revision.
+            </div>
+          </div>
+        </div>
 
-// REVEAL ON SCROLL
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
-}, { threshold: 0.1 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        <!-- Accordion 3 -->
+        <div class="faq-item bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-2xl overflow-hidden">
+          <button class="w-full text-left px-6 py-5 flex items-center justify-between text-base sm:text-lg font-extrabold text-brand-navy dark:text-white transition-colors duration-300" onclick="toggleAccordion(this)">
+            Do you provide certificates after completion?
+            <span class="faq-icon text-soft-blue font-light text-xl transition-transform duration-300"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="px-6 pb-5 text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed border-t border-slate-100 dark:border-dark-border/30 pt-4">
+              Yes, upon successful completion of your course and the final practical assessment, you will receive a professional completion certificate from Fuzion Academy recognized by corporate firms.
+            </div>
+          </div>
+        </div>
 
-// FAQ
-function toggleFaq(btn) {
-  const item = btn.closest('.faq-item');
-  const a = item.querySelector('.faq-a');
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item').forEach(i => {
-    i.classList.remove('open');
-    i.querySelector('.faq-a').style.maxHeight = '0';
-  });
-  if (!isOpen) {
-    item.classList.add('open');
-    a.style.maxHeight = a.scrollHeight + 'px';
-  }
-}
+        <!-- Accordion 4 -->
+        <div class="faq-item bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-2xl overflow-hidden">
+          <button class="w-full text-left px-6 py-5 flex items-center justify-between text-base sm:text-lg font-extrabold text-brand-navy dark:text-white transition-colors duration-300" onclick="toggleAccordion(this)">
+            What are the class timings?
+            <span class="faq-icon text-soft-blue font-light text-xl transition-transform duration-300"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="px-6 pb-5 text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed border-t border-slate-100 dark:border-dark-border/30 pt-4">
+              We offer highly flexible schedules with morning batches (7 AM - 10 AM), afternoon slots (12 PM - 3 PM), evening batches (5 PM - 8 PM), and special weekend sessions to accommodate working professionals.
+            </div>
+          </div>
+        </div>
 
-// TESTIMONIAL CAROUSEL
-let currentSlide = 0;
-let autoSlide;
-function goToSlide(i) {
-  currentSlide = i;
-  const track = document.getElementById('tTrack');
-  const cardWidth = track.children[0].offsetWidth + 24;
-  const maxOffset = track.scrollWidth - track.parentElement.offsetWidth;
-  const offset = Math.min(i * cardWidth, maxOffset);
-  track.style.transform = `translateX(-${offset}px)`;
-  document.querySelectorAll('.t-dot').forEach((d, idx) => d.classList.toggle('active', idx === i));
-}
-function nextSlide() {
-  const total = document.querySelectorAll('.testimonial-card').length;
-  goToSlide((currentSlide + 1) % total);
-}
-autoSlide = setInterval(nextSlide, 4000);
-document.querySelector('.testimonial-track-wrap').addEventListener('mouseenter', () => clearInterval(autoSlide));
-document.querySelector('.testimonial-track-wrap').addEventListener('mouseleave', () => { autoSlide = setInterval(nextSlide, 4000); });
+        <!-- Accordion 5 -->
+        <div class="faq-item bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-2xl overflow-hidden">
+          <button class="w-full text-left px-6 py-5 flex items-center justify-between text-base sm:text-lg font-extrabold text-brand-navy dark:text-white transition-colors duration-300" onclick="toggleAccordion(this)">
+            Is there a free demo class before joining?
+            <span class="faq-icon text-soft-blue font-light text-xl transition-transform duration-300"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="px-6 pb-5 text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed border-t border-slate-100 dark:border-dark-border/30 pt-4">
+              Yes! We offer a completely free, zero-obligation demo class to experience our interactive methodologies and coaches before you enroll. Simply click "Book Demo Class".
+            </div>
+          </div>
+        </div>
 
-// STATS COUNTER
-function animateCounter(el, target) {
-  let start = 0;
-  const duration = 2000;
-  const step = target / (duration / 16);
-  const timer = setInterval(() => {
-    start += step;
-    if (start >= target) { el.textContent = target + '+'; clearInterval(timer); }
-    else el.textContent = Math.floor(start) + (target === 95 ? '%' : '+');
-  }, 16);
-}
-const statsObserver = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      document.querySelectorAll('.stat-num').forEach(el => {
-        animateCounter(el, parseInt(el.dataset.target));
-      });
-      statsObserver.disconnect();
+        <!-- Accordion 6 -->
+        <div class="faq-item bg-white dark:bg-dark-card border border-slate-200 dark:border-dark-border/80 rounded-2xl overflow-hidden">
+          <button class="w-full text-left px-6 py-5 flex items-center justify-between text-base sm:text-lg font-extrabold text-brand-navy dark:text-white transition-colors duration-300" onclick="toggleAccordion(this)">
+            Do you help with job interview preparation?
+            <span class="faq-icon text-soft-blue font-light text-xl transition-transform duration-300"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="px-6 pb-5 text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed border-t border-slate-100 dark:border-dark-border/30 pt-4">
+              Yes, we do. Our Interview Prep program includes detailed HR mock interviews, common Q&A structuring, resume enhancement classes, and professional body language grooming.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT & CALLBACK BOOKING ==================== -->
+  <section id="contact" class="py-24 bg-white dark:bg-dark-bg relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        
+        <!-- Left Column: Contact details & Map -->
+        <div class="flex flex-col gap-8 reveal">
+          <div>
+            <span class="inline-block px-4 py-1.5 bg-soft-blue/10 dark:bg-soft-blue/5 border border-soft-blue/20 dark:border-dark-border text-soft-blue dark:text-sky-blue text-xs font-bold rounded-full uppercase tracking-wider mb-3">Get in Touch</span>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-brand-navy dark:text-white tracking-tight mb-4">Start Your Journey Today</h2>
+            <p class="text-base text-slate-500 dark:text-dark-muted leading-relaxed">Book your free 1-on-1 demo slot or enquire directly via chat. We are here to support your English transformation.</p>
+          </div>
+
+          <!-- Contact Quick Info chips -->
+          <div class="flex flex-col gap-4">
+            
+            <a href="https://wa.me/919582774387" target="_blank" class="flex items-center gap-4 bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border/70 p-4 rounded-2xl hover:border-emerald-500 transition-colors">
+              <div class="w-12 h-12 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 rounded-xl flex items-center justify-center text-xl font-bold"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <h4 class="font-extrabold text-brand-navy dark:text-white text-sm">WhatsApp Us</h4>
+                <p class="text-xs text-slate-500 dark:text-dark-muted">+91 95827 74387</p>
+              </div>
+            </a>
+
+            <a href="tel:+919582774387" class="flex items-center gap-4 bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border/70 p-4 rounded-2xl hover:border-soft-blue dark:hover:border-sky-blue transition-colors">
+              <div class="w-12 h-12 bg-soft-blue/10 text-soft-blue rounded-xl flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4 class="font-extrabold text-brand-navy dark:text-white text-sm">Call Us Directly</h4>
+                <p class="text-xs text-slate-500 dark:text-dark-muted">+91 95827 74387</p>
+              </div>
+            </a>
+
+            <a href="mailto:youcanspeakenglish4@gmail.com" class="flex items-center gap-4 bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border/70 p-4 rounded-2xl hover:border-soft-purple transition-colors">
+              <div class="w-12 h-12 bg-soft-purple/20 text-soft-purple rounded-xl flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4 class="font-extrabold text-brand-navy dark:text-white text-sm">Email Inbox</h4>
+                <p class="text-xs text-slate-500 dark:text-dark-muted">youcanspeakenglish4@gmail.com</p>
+              </div>
+            </a>
+
+            <div class="flex items-center gap-4 bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border/70 p-4 rounded-2xl">
+              <div class="w-12 h-12 bg-yellow-accent/20 text-yellow-500 dark:text-yellow-accent rounded-xl flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4 class="font-extrabold text-brand-navy dark:text-white text-sm">Visit Location</h4>
+                <p class="text-xs text-slate-500 dark:text-dark-muted font-medium">Pratap Vihar, Ghaziabad, Uttar Pradesh</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Embedded Map -->
+          <div class="h-60 rounded-3xl overflow-hidden border border-slate-200 dark:border-dark-border">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m4!2sPratap+Vihar+Ghaziabad!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" class="w-full h-full border-0 filter grayscale dark:invert-[90%] dark:hue-rotate-180" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Right Column: Callback Request Form Card -->
+        <div class="bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border rounded-3xl p-6 sm:p-10 shadow-lg relative overflow-hidden reveal">
+          <div class="absolute -top-4 -left-4 w-24 h-24 bg-soft-blue/5 rounded-full blur-xl pointer-events-none"></div>
+          
+          <h3 class="text-xl sm:text-2xl font-black text-brand-navy dark:text-white mb-6">Book Your Free Demo Class</h3>
+          
+          <form id="leadForm" class="space-y-5" onsubmit="handleFormSubmission(event)">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Name -->
+              <div class="flex flex-col gap-1.5">
+                <label for="formName" class="text-xs font-bold text-slate-600 dark:text-dark-muted uppercase tracking-wider">Full Name</label>
+                <input type="text" id="formName" name="name" class="px-4 py-3 rounded-xl border border-slate-200 dark:border-dark-border bg-white dark:bg-dark-bg focus:ring-2 focus:ring-soft-blue outline-none transition-all dark:text-white" placeholder="John Doe" required>
+              </div>
+              <!-- Phone -->
+              <div class="flex flex-col gap-1.5">
+                <label for="formPhone" class="text-xs font-bold text-slate-600 dark:text-dark-muted uppercase tracking-wider">Phone Number</label>
+                <input type="tel" id="formPhone" name="phone" class="px-4 py-3 rounded-xl border border-slate-200 dark:border-dark-border bg-white dark:bg-dark-bg focus:ring-2 focus:ring-soft-blue outline-none transition-all dark:text-white" placeholder="+91 98765 43210" required>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="flex flex-col gap-1.5">
+              <label for="formEmail" class="text-xs font-bold text-slate-600 dark:text-dark-muted uppercase tracking-wider">Email Address</label>
+              <input type="email" id="formEmail" name="email" class="px-4 py-3 rounded-xl border border-slate-200 dark:border-dark-border bg-white dark:bg-dark-bg focus:ring-2 focus:ring-soft-blue outline-none transition-all dark:text-white" placeholder="john@example.com" required>
+            </div>
+
+            <!-- Course Selection -->
+            <div class="flex flex-col gap-1.5">
+              <label for="formCourse" class="text-xs font-bold text-slate-600 dark:text-dark-muted uppercase tracking-wider">Course Interest</label>
+              <select id="formCourse" name="course" class="px-4 py-3 rounded-xl border border-slate-200 dark:border-dark-border bg-white dark:bg-dark-bg focus:ring-2 focus:ring-soft-blue outline-none transition-all dark:text-white appearance-none cursor-pointer" required>
+                <option value="">Select a Course</option>
+                <option value="Spoken English Course">Spoken English Course</option>
+                <option value="Communication Skills">Communication Skills</option>
+                <option value="Interview Preparation">Interview Preparation</option>
+                <option value="Personality Development">Personality Development</option>
+                <option value="All Courses">All Program Package</option>
+              </select>
+            </div>
+
+            <!-- Custom Message -->
+            <div class="flex flex-col gap-1.5">
+              <label for="formMsg" class="text-xs font-bold text-slate-600 dark:text-dark-muted uppercase tracking-wider">Message (Optional)</label>
+              <textarea id="formMsg" name="message" rows="3" class="px-4 py-3 rounded-xl border border-slate-200 dark:border-dark-border bg-white dark:bg-dark-bg focus:ring-2 focus:ring-soft-blue outline-none transition-all dark:text-white resize-none" placeholder="Tell us about your learning goals..."></textarea>
+            </div>
+
+            <!-- Submit buttons -->
+            <div class="flex flex-col sm:flex-row items-center gap-3 pt-2">
+              <button type="submit" class="w-full py-4 bg-soft-blue hover:bg-blue-600 text-white font-extrabold rounded-2xl shadow-lg transition-colors flex items-center justify-center gap-2">
+                <i class="fa-solid fa-graduation-cap"></i> Book Free Demo Class
+              </button>
+              <a id="whatsappShareBtn" href="#" target="_blank" class="w-full sm:w-auto px-6 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold rounded-2xl shadow-lg transition-colors flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Chat
+              </a>
+            </div>
+          </form>
+
+          <!-- Toast Alert Success -->
+          <div id="toastSuccess" class="hidden absolute bottom-6 left-6 right-6 p-4 bg-emerald-500 text-white rounded-2xl shadow-lg flex items-center justify-between border border-emerald-400">
+            <span class="text-xs font-bold"><i class="fa-solid fa-circle-check text-base mr-2"></i> Demo Class Request Submitted! Opening WhatsApp.</span>
+            <button onclick="document.getElementById('toastSuccess').classList.add('hidden')" class="text-white hover:text-emerald-100"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER SECTION (LIGHT THEME) ==================== -->
+  <footer class="bg-slate-50 dark:bg-slate-950 text-slate-500 dark:text-slate-400 pt-16 pb-8 border-t border-slate-200 dark:border-dark-border/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        
+        <!-- Brand Info -->
+        <div class="flex flex-col gap-4">
+          <span class="font-heading text-2xl font-black text-brand-navy dark:text-white tracking-tight">Fuzion<span class="text-soft-blue">.</span>Academy</span>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-dark-muted leading-relaxed">Transforming spoken English, communication confidence, and personality profiles. Elevate your global career options.</p>
+          <div class="flex items-center gap-3.5 mt-3">
+            <a href="#" class="w-9 h-9 rounded-xl bg-slate-200/60 dark:bg-white/5 hover:bg-soft-blue dark:hover:bg-soft-blue hover:text-white text-slate-700 dark:text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+            <a href="#" class="w-9 h-9 rounded-xl bg-slate-200/60 dark:bg-white/5 hover:bg-soft-blue dark:hover:bg-soft-blue hover:text-white text-slate-700 dark:text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-instagram text-sm"></i></a>
+            <a href="#" class="w-9 h-9 rounded-xl bg-slate-200/60 dark:bg-white/5 hover:bg-soft-blue dark:hover:bg-soft-blue hover:text-white text-slate-700 dark:text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+            <a href="https://wa.me/919582774387" target="_blank" class="w-9 h-9 rounded-xl bg-slate-200/60 dark:bg-white/5 hover:bg-soft-blue dark:hover:bg-soft-blue hover:text-white text-slate-700 dark:text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-whatsapp text-sm"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-brand-navy dark:text-white font-bold text-sm uppercase tracking-widest mb-5">Quick Links</h4>
+          <ul class="space-y-3.5 text-xs sm:text-sm">
+            <li><a href="#home" class="hover:text-soft-blue dark:hover:text-sky-blue transition-colors">Home</a></li>
+            <li><a href="#courses" class="hover:text-soft-blue dark:hover:text-sky-blue transition-colors">Our Courses</a></li>
+            <li><a href="#why" class="hover:text-soft-blue dark:hover:text-sky-blue transition-colors">Why Choose Us</a></li>
+            <li><a href="#process" class="hover:text-soft-blue dark:hover:text-sky-blue transition-colors">Learning Journey</a></li>
+            <li><a href="#testimonials" class="hover:text-soft-blue dark:hover:text-sky-blue transition-colors">Student Reviews</a></li>
+          </ul>
+        </div>
+
+        <!-- Courses links -->
+        <div>
+          <h4 class="text-brand-navy dark:text-white font-bold text-sm uppercase tracking-widest mb-5">Courses</h4>
+          <ul class="space-y-3.5 text-xs sm:text-sm">
+            <li><a href="#courses" class="hover:text-soft-blue dark:hover:text-sky-blue transition-colors">Spoken English</a></li>
+            <li><a href="#courses" class="hover:text-soft-blue dark:hover:text-sky-blue transition-colors">Professional Comm.</a></li>
+            <li><a href="#courses" class="hover:text-soft-blue dark:hover:text-sky-blue transition-colors">Interview Preparation</a></li>
+            <li><a href="#courses" class="hover:text-soft-blue dark:hover:text-sky-blue transition-colors">Personality Development</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="flex flex-col gap-4">
+          <h4 class="text-brand-navy dark:text-white font-bold text-sm uppercase tracking-widest mb-5">Stay Updated</h4>
+          <p class="text-xs text-slate-500 dark:text-dark-muted leading-relaxed">Subscribe to get free learning tips, workshop dates, and batch launch notifications.</p>
+          <form id="newsletterForm" class="flex gap-2" onsubmit="handleNewsletter(event)">
+            <input type="email" id="newsletterEmail" placeholder="Your Email Address" class="px-4 py-3 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl text-slate-800 dark:text-white outline-none focus:ring-2 focus:ring-soft-blue flex-1 text-xs" required>
+            <button type="submit" class="px-4 py-3 bg-soft-blue hover:bg-blue-600 text-white rounded-xl font-bold text-xs transition-colors shadow-sm">Subscribe</button>
+          </form>
+          <div id="newsletterSuccess" class="hidden text-xs text-emerald-600 font-bold"><i class="fa-solid fa-circle-check mr-1"></i> Subscribed successfully!</div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom panel -->
+      <div class="border-t border-slate-200 dark:border-dark-border/40 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs gap-4">
+        <p class="text-slate-400 dark:text-dark-muted font-medium">&copy; 2026 Fuzion Academy. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <span class="text-slate-400 dark:text-dark-muted"><i class="fa-solid fa-location-dot text-soft-blue mr-1"></i> Pratap Vihar, Ghaziabad, UP</span>
+          <span class="text-slate-400 dark:text-dark-muted"><i class="fa-solid fa-phone text-soft-blue mr-1"></i> +91 95827 74387</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MOBILE FLOATING STICKY CTA BAR ==================== -->
+  <div class="sm:hidden fixed bottom-4 left-4 right-4 z-40 bg-white/80 dark:bg-dark-card/85 backdrop-blur-md border border-slate-200 dark:border-dark-border/60 rounded-2xl p-2.5 shadow-xl flex items-center justify-between gap-3 select-none">
+    <a href="tel:+919582774387" class="flex-1 flex items-center justify-center gap-2 py-3 bg-slate-100 hover:bg-slate-200 dark:bg-dark-border/40 text-slate-800 dark:text-white text-xs font-bold rounded-xl border border-slate-200/50 dark:border-dark-border">
+      <i class="fa-solid fa-phone text-soft-blue text-sm"></i> Call Coach
+    </a>
+    <a href="https://wa.me/919582774387" target="_blank" class="flex-1 flex items-center justify-center gap-2 py-3 bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-bold rounded-xl shadow-md">
+      <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Us
+    </a>
+  </div>
+
+  <!-- Quick Floating WhatsApp Floating circle button (Desktop/Large Screen) -->
+  <a href="https://wa.me/919582774387" target="_blank" class="hidden sm:flex fixed bottom-6 right-6 z-40 w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white items-center justify-center rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 animate-bounce-slow" title="Chat with Fuzion Academy">
+    <i class="fa-brands fa-whatsapp text-3xl"></i>
+  </a>
+
+  <!-- ==================== LOGIC AND INTERACTIVE JAVASCRIPT ==================== -->
+  <script type="text/javascript">
+    
+    // ── DARK MODE / LIGHT MODE IMPLEMENTATION ──
+    const themeToggleBtn = document.getElementById('themeToggle');
+    
+    // Check local storage or user preferences
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
     }
-  });
-}, { threshold: 0.5 });
-statsObserver.observe(document.querySelector('.stats-section'));
 
-// FORM SUBMIT
-function handleSubmit() {
-  const btn = event.target;
-  btn.textContent = '✅ Demo Booked! We\'ll call you shortly.';
-  btn.style.background = '#22C55E';
-  setTimeout(() => {
-    btn.textContent = '🎯 Book Free Demo Class';
-    btn.style.background = '';
-  }, 4000);
-}
-</script>
+    themeToggleBtn.addEventListener('click', () => {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.theme = 'light';
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
+      }
+    });
+
+    // ── STICKY GLASSMORPHIC NAVBAR EFFECT ──
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        navbar.classList.add('bg-white/80', 'dark:bg-dark-bg/85', 'backdrop-blur-md', 'shadow-md', 'py-2');
+        navbar.classList.remove('py-4');
+      } else {
+        navbar.classList.remove('bg-white/80', 'dark:bg-dark-bg/85', 'backdrop-blur-md', 'shadow-md', 'py-2');
+        navbar.classList.add('py-4');
+      }
+    });
+
+    // ── MOBILE NAVIGATION DRAWER TOGGLE ──
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMobileMenu = document.getElementById('closeMobileMenu');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+    function toggleMenu() {
+      mobileMenu.classList.toggle('hidden');
+    }
+
+    mobileMenuBtn.addEventListener('click', toggleMenu);
+    closeMobileMenu.addEventListener('click', toggleMenu);
+    mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+    // Close menu when clicking backdrop
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu) toggleMenu();
+    });
+
+    // ── SCROLL TRIGGER REVEAL ANIMATIONS ──
+    const revealElements = document.querySelectorAll('.reveal');
+    function checkReveal() {
+      const windowHeight = window.innerHeight;
+      revealElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 80) {
+          el.classList.add('active');
+        }
+      });
+    }
+    window.addEventListener('scroll', checkReveal);
+    window.addEventListener('load', checkReveal);
+
+    // ── INTERACTIVE TIMELINE PROGRESS LINE ──
+    const timelineProgress = document.getElementById('timelineProgress');
+    const processSection = document.getElementById('process');
+    
+    window.addEventListener('scroll', () => {
+      if (!processSection) return;
+      const rect = processSection.getBoundingClientRect();
+      const top = rect.top;
+      const height = rect.height;
+      const scrollPos = window.innerHeight - top;
+      
+      if (scrollPos > 0 && scrollPos < height + window.innerHeight) {
+        let percent = Math.min((scrollPos / (height * 0.8)) * 100, 100);
+        timelineProgress.style.width = percent + '%';
+      }
+    });
+
+    // ── COURSE CLICK-SELECTION REDIRECT ──
+    function selectCourseAndScroll(courseName) {
+      const courseSelect = document.getElementById('formCourse');
+      if (courseSelect) {
+        courseSelect.value = courseName;
+        updateWhatsAppLink();
+      }
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+        // Focus the name field
+        setTimeout(() => {
+          document.getElementById('formName').focus();
+        }, 800);
+      }
+    }
+
+    // ── ACCORDION FAQS COLLAPSIBLE LOGIC ──
+    function toggleAccordion(btn) {
+      const parent = btn.closest('.faq-item');
+      const answer = parent.querySelector('.faq-answer');
+      const icon = btn.querySelector('.faq-icon');
+      
+      // Close all other items
+      document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== parent) {
+          item.querySelector('.faq-answer').style.maxHeight = '0px';
+          item.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+        }
+      });
+
+      // Toggle current
+      if (answer.style.maxHeight === '0px' || !answer.style.maxHeight) {
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        icon.style.transform = 'rotate(45deg)';
+      } else {
+        answer.style.maxHeight = '0px';
+        icon.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    // ── TESTIMONIAL CAROUSEL SLIDER ──
+    const track = document.getElementById('testimonialTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const dotsContainer = document.getElementById('testimonialDots');
+    
+    let index = 0;
+    let slidesCount = 5;
+
+    // Generate Dots
+    for (let i = 0; i < slidesCount; i++) {
+      const dot = document.createElement('button');
+      dot.className = `w-2 h-2 rounded-full transition-all duration-300 ${i === 0 ? 'bg-soft-blue w-6' : 'bg-slate-300 dark:bg-slate-700'}`;
+      dot.ariaLabel = `Go to review slide ${i + 1}`;
+      dot.addEventListener('click', () => {
+        index = i;
+        updateSlider();
+      });
+      dotsContainer.appendChild(dot);
+    }
+
+    function updateSlider() {
+      const card = track.children[0];
+      const cardWidth = card.offsetWidth + 24;
+      const offset = -index * cardWidth;
+      const maxOffset = track.scrollWidth - track.parentElement.offsetWidth;
+      
+      track.style.transform = `translateX(${Math.max(offset, -maxOffset)}px)`;
+      
+      Array.from(dotsContainer.children).forEach((dot, i) => {
+        if (i === index) {
+          dot.classList.add('bg-soft-blue', 'w-6');
+          dot.classList.remove('bg-slate-300', 'dark:bg-slate-700');
+        } else {
+          dot.classList.remove('bg-soft-blue', 'w-6');
+          dot.classList.add('bg-slate-300', 'dark:bg-slate-700');
+        }
+      });
+    }
+
+    prevBtn.addEventListener('click', () => {
+      index = index > 0 ? index - 1 : slidesCount - 1;
+      updateSlider();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      index = index < slidesCount - 1 ? index + 1 : 0;
+      updateSlider();
+    });
+
+    window.addEventListener('resize', updateSlider);
+
+    let slideTimer = setInterval(() => {
+      index = (index + 1) % slidesCount;
+      updateSlider();
+    }, 4500);
+
+    track.addEventListener('mouseenter', () => clearInterval(slideTimer));
+    track.addEventListener('mouseleave', () => {
+      slideTimer = setInterval(() => {
+        index = (index + 1) % slidesCount;
+        updateSlider();
+      }, 4500);
+    });
+
+    // ── VIDEO TESTIMONIAL MODAL DRIVER ──
+    const videoModal = document.getElementById('videoModal');
+    const openVideoModal = document.getElementById('openVideoModal');
+    const closeVideoModal = document.getElementById('closeVideoModal');
+
+    openVideoModal.addEventListener('click', () => {
+      videoModal.classList.remove('hidden');
+    });
+
+    closeVideoModal.addEventListener('click', () => {
+      videoModal.classList.add('hidden');
+    });
+
+    videoModal.addEventListener('click', (e) => {
+      if (e.target === videoModal) videoModal.classList.add('hidden');
+    });
+
+    // ── INTERACTIVE SCROLL TRIGGER COUNTERS ──
+    const statSection = document.getElementById('stats');
+    const counterElements = [
+      { id: 'counter-students', target: 1000, suffix: '+' },
+      { id: 'counter-satisfaction', target: 95, suffix: '%' },
+      { id: 'counter-placements', target: 500, suffix: '+' },
+      { id: 'counter-years', target: 5, suffix: '+' }
+    ];
+
+    let triggeredCounters = false;
+
+    function runCounters() {
+      counterElements.forEach(item => {
+        const el = document.getElementById(item.id);
+        if (!el) return;
+        
+        let start = 0;
+        const duration = 2000;
+        const speed = Math.ceil(item.target / (duration / 16));
+        
+        const timer = setInterval(() => {
+          start += speed;
+          if (start >= item.target) {
+            el.textContent = item.target + item.suffix;
+            clearInterval(timer);
+          } else {
+            el.textContent = Math.floor(start) + item.suffix;
+          }
+        }, 16);
+      });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !triggeredCounters) {
+          runCounters();
+          triggeredCounters = true;
+        }
+      });
+    }, { threshold: 0.5 });
+
+    if (statSection) {
+      observer.observe(statSection);
+    }
+
+    // ── MASONRY GALLERY LIGHTBOX LOGIC ──
+    const galleryItems = document.querySelectorAll('#gallery .group');
+    const lightboxOverlay = document.getElementById('lightboxOverlay');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const closeLightbox = document.getElementById('closeLightbox');
+    const prevImg = document.getElementById('prevImg');
+    const nextImg = document.getElementById('nextImg');
+
+    let currentImgIdx = 0;
+    const imagesList = [];
+
+    galleryItems.forEach((item, idx) => {
+      const img = item.querySelector('img');
+      imagesList.push({
+        src: img.src,
+        alt: img.alt
+      });
+
+      item.addEventListener('click', () => {
+        currentImgIdx = idx;
+        openLightbox();
+      });
+    });
+
+    function openLightbox() {
+      lightboxImage.src = imagesList[currentImgIdx].src;
+      lightboxCaption.textContent = imagesList[currentImgIdx].alt;
+      lightboxOverlay.classList.remove('hidden');
+    }
+
+    closeLightbox.addEventListener('click', () => {
+      lightboxOverlay.classList.add('hidden');
+    });
+
+    prevImg.addEventListener('click', () => {
+      currentImgIdx = currentImgIdx > 0 ? currentImgIdx - 1 : imagesList.length - 1;
+      openLightbox();
+    });
+
+    nextImg.addEventListener('click', () => {
+      currentImgIdx = currentImgIdx < imagesList.length - 1 ? currentImgIdx + 1 : 0;
+      openLightbox();
+    });
+
+    lightboxOverlay.addEventListener('click', (e) => {
+      if (e.target === lightboxOverlay) lightboxOverlay.classList.add('hidden');
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (lightboxOverlay.classList.contains('hidden')) return;
+      if (e.key === 'Escape') lightboxOverlay.classList.add('hidden');
+      if (e.key === 'ArrowLeft') prevImg.click();
+      if (e.key === 'ArrowRight') nextImg.click();
+    });
+
+    // ── LEAD FORM HANDLING & WHATSAPP REDIRECT ──
+    const leadForm = document.getElementById('leadForm');
+    const toastSuccess = document.getElementById('toastSuccess');
+    const whatsappShareBtn = document.getElementById('whatsappShareBtn');
+
+    function updateWhatsAppLink() {
+      const name = encodeURIComponent(document.getElementById('formName').value || '');
+      const phone = encodeURIComponent(document.getElementById('formPhone').value || '');
+      const course = encodeURIComponent(document.getElementById('formCourse').value || '');
+      const msg = encodeURIComponent(document.getElementById('formMsg').value || '');
+      
+      const defaultText = `Hi Fuzion Academy, I want to book a free demo class.%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Course:* ${course}%0A*Notes:* ${msg}`;
+      whatsappShareBtn.href = `https://wa.me/919582774387?text=${defaultText}`;
+    }
+
+    document.getElementById('formName').addEventListener('input', updateWhatsAppLink);
+    document.getElementById('formPhone').addEventListener('input', updateWhatsAppLink);
+    document.getElementById('formCourse').addEventListener('change', updateWhatsAppLink);
+    document.getElementById('formMsg').addEventListener('input', updateWhatsAppLink);
+
+    function handleFormSubmission(event) {
+      event.preventDefault();
+      toastSuccess.classList.remove('hidden');
+      updateWhatsAppLink();
+      setTimeout(() => {
+        window.open(whatsappShareBtn.href, '_blank');
+      }, 800);
+      leadForm.reset();
+      setTimeout(() => {
+        toastSuccess.classList.add('hidden');
+      }, 5000);
+    }
+
+    // ── NEWSLETTER SUBMIT DRIVER ──
+    function handleNewsletter(event) {
+      event.preventDefault();
+      const email = document.getElementById('newsletterEmail');
+      const msg = document.getElementById('newsletterSuccess');
+      
+      msg.classList.remove('hidden');
+      email.value = '';
+      setTimeout(() => {
+        msg.classList.add('hidden');
+      }, 4000);
+    }
+
+    // ── BIOGRAPHY MODAL INTERACTIVE CONFIG ──
+    const bioModal = document.getElementById('bioModal');
+    const bioModalImg = document.getElementById('bioModalImg');
+    const bioRoleTag = document.getElementById('bioRoleTag');
+    const bioModalTitle = document.getElementById('bioModalTitle');
+    const bioModalDesc = document.getElementById('bioModalDesc');
+    const closeBioModal = document.getElementById('closeBioModal');
+
+    const coachesData = [
+      {
+        src: 'Untitled design/1.png',
+        role: 'Personality Development',
+        title: 'Mindset, Confidence &amp; Body Language Mentor',
+        desc: '"Personality is not just how you dress; it is how you enter a room, carry yourself, and influence people. My coaching is designed to help you construct a highly positive body language and high self-esteem."'
+      },
+      {
+        src: 'Untitled design/4.png',
+        role: 'Communication Skills',
+        title: 'Professional Presence &amp; Pitching Coach',
+        desc: '"Professional communication is the master key to corporate success. I will guide you to speak with clarity, write powerful emails, and deliver winning presentations that get you noticed by managers and executives."'
+      },
+      {
+        src: 'Untitled design/3.png',
+        role: 'Interview Preparation',
+        title: 'Executive Mock Interviews &amp; Resume Specialist',
+        desc: '"Getting hired is a structural science. I teach you how to analyze HR questions, frame your answers with impact, design a clean CV, and walk into any interview hall with total confidence."'
+      },
+      {
+        src: 'Untitled design/2.png',
+        role: 'Spoken English',
+        title: 'Fluency &amp; Active Daily Conversation Guide',
+        desc: '"Fluency comes from speaking, not just reading grammar worksheets. I provide a highly comfortable environment where you practice active daily conversation to remove hesitation and regional mother-tongue influence."'
+      },
+      {
+        src: 'Untitled design/5.png',
+        role: 'Public Speaking',
+        title: 'Stage Presence &amp; Public Presentation Master',
+        desc: '"Stage fear is common, but it can be permanently removed with practice. I give you progressive presentation drills to help you speak smoothly before large groups of people without breaking a sweat."'
+      }
+    ];
+
+    function openBioModal(idx) {
+      const data = coachesData[idx];
+      bioModalImg.src = data.src;
+      bioRoleTag.textContent = data.role;
+      bioModalTitle.innerHTML = data.title;
+      bioModalDesc.textContent = data.desc;
+      
+      bioModal.classList.remove('hidden');
+      bioModal.classList.add('flex');
+    }
+
+    function closeBioPopup() {
+      bioModal.classList.add('hidden');
+      bioModal.classList.remove('flex');
+    }
+
+    closeBioModal.addEventListener('click', closeBioPopup);
+    bioModal.addEventListener('click', (e) => {
+      if (e.target === bioModal) closeBioPopup();
+    });
+
+    function bookSessionWithCoach() {
+      closeBioPopup();
+      // Scroll directly to the form
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+        // Set course selection to All Courses
+        document.getElementById('formCourse').value = "All Courses";
+        updateWhatsAppLink();
+        // Focus name field
+        setTimeout(() => {
+          document.getElementById('formName').focus();
+        }, 850);
+      }
+    }
+
+  </script>
 </body>
 </html>
